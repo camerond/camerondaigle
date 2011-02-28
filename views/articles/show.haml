@@ -1,0 +1,7 @@
+%section#article_show
+
+  %article
+    %h1= @meta['title']
+    %h2= pretty_date @meta['published']
+    = markypants(@text)
+  = haml :"articles/_articles"

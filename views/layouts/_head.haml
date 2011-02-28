@@ -1,0 +1,16 @@
+%head
+  %meta(charset="UTF-8")
+  %meta(type="description" content="")
+  %link(rel='icon' type='image/png' href='/favicon.png')
+  / RSS!!!!!!!!!!!!!!!!
+  %title<
+    Cameron Daigle
+    = ": #{@title}" if @title
+  %link(rel="stylesheet" type="text/css" href="/stylesheets/application.css")
+  %script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js")
+  %script(type="text/javascript" src="/javascript/application.js")
+  %script(type="text/javascript" src="http://use.typekit.com/tyk7hhg.js")
+  :javascript
+    try{Typekit.load();}catch(e){}
+  /[if IE]
+    %script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript")
