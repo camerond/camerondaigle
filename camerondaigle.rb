@@ -4,7 +4,7 @@ require 'yaml'
 require 'hassle'
 require 'haml'
 require 'tilt'
-require 'RDiscount'
+require 'rdiscount'
 
 class Tilt::HamlTemplate
   module ::Haml::Filters::Markdown
