@@ -5,6 +5,7 @@ require 'hassle'
 require 'haml'
 require 'tilt'
 require 'rdiscount'
+require 'nokogiri'
 
 class Tilt::HamlTemplate
   module ::Haml::Filters::Markdown
@@ -43,6 +44,12 @@ end
 
 get '/stylesheets/*.css' do |f|
   sass ('/stylesheets/sass/' + f).to_sym
+end
+
+get '/feed/?' do
+  @articles = load_structure('articles');
+  @latest_article_date = Time.parse(@articles[0][:published]).rfc822
+  nokogiri :'/feed/articles'
 end
 
 get '/' do

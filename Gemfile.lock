@@ -23,6 +23,7 @@ GEM
     mime-types (1.16)
     monkey-lib (0.5.4)
       backports
+    nokogiri (1.4.4)
     rack (1.2.1)
     rack-rewrite (1.0.2)
     rake (0.8.7)
@@ -54,6 +55,7 @@ DEPENDENCIES
   haml (= 3.0.25)
   hassle (= 0.0.1)
   heroku (= 1.18.0)
+  nokogiri (= 1.4.4)
   rack-rewrite (= 1.0.2)
   rdiscount (= 1.6.8)
   sinatra (= 1.1.3)

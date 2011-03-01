@@ -2,6 +2,7 @@ require 'aws/s3'
 require 'yaml'
 $KCODE = 'UTF8'
 require 'ya2yaml'
+require 'rdiscount'
 
 AWS::S3::Base.establish_connection!(
   :access_key_id => ENV['AMAZON_ACCESS_KEY_ID'],
@@ -27,7 +28,8 @@ namespace :site do
       a.push({
         :title => meta['title'],
         :published => meta['published'],
-        :slug => "/articles/" << File.basename(f, ".markdown")
+        :slug => "/articles/" << File.basename(f, ".markdown"),
+        :rss_summary => RDiscount.new(article[1].strip.split("\n")[0]).to_html
       })
       puts "indexing #{File.basename(f)}"
     end

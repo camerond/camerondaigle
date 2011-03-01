@@ -1,0 +1,19 @@
+builder = Nokogiri::XML::Builder::new do |xml|
+  xml.rss('version' => '2.0') {
+    xml.channel {
+      xml.title "Cameron Daigle"
+      xml.link "http://camerondaigle.com"
+      xml.description "Articles about design & development by Cameron Daigle."
+      xml.language "en-us"
+      @articles.each do |a|
+        xml.item {
+          xml.title a[:title]
+          xml.link "http://camerondaigle.com#{a[:slug]}"
+          xml.description a[:rss_summary]
+          xml.pubDate Time.parse(a[:published]).rfc822
+        }
+      end
+    }
+  }
+end
+puts builder.to_xml
