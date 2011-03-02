@@ -1,8 +1,8 @@
-require 'aws/s3'
-require 'yaml'
 $KCODE = 'UTF8'
-require 'ya2yaml'
+
+require 'aws/s3'
 require 'rdiscount'
+require 'ya2yaml' if development?
 
 AWS::S3::Base.establish_connection!(
   :access_key_id => ENV['AMAZON_ACCESS_KEY_ID'],

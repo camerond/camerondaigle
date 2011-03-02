@@ -1,11 +1,12 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
 require 'yaml'
-require 'hassle'
 require 'haml'
 require 'tilt'
 require 'rdiscount'
 require 'nokogiri'
+
+require "sinatra/reloader" if development?
+require 'hassle' if production?
 
 class Tilt::HamlTemplate
   module ::Haml::Filters::Markdown
@@ -36,7 +37,7 @@ get "/articles/:article/?" do
   file = "views/articles/#{params[:article]}.markdown"
   if File.exist?(file)
     @articles = load_structure('articles')
-    load_into('/articles/show', file)
+    load_into_haml('/articles/show', file)
   else
     404
   end
@@ -61,7 +62,7 @@ error 404 do
 end
 
 helpers do
-  def load_into(template, file)
+  def load_into_haml(template, file)
     article = File.read(file).split("---\n")
     @meta = YAML::load(article[0])
     @text = article[1]
@@ -89,5 +90,5 @@ helpers do
   end
 end
 
-use Hassle
+use Hassle if production?
 
