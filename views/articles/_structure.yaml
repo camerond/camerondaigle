@@ -1,6 +1,15 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2011-03-01 11:44 PM"
+  ? !ruby/symbol rss_summary
+  : "<p>Almost a year ago, I moved from rainy Nashville to sunny Florida and joined the good people at <a href=\"http://hashrocket.com\">Hashrocket</a> -- from a team with 2 designers (me and another fellow), 1 frontend developer (me) and .5 backend developers (.2 of that was me) to a mature, agile, bleeding-edge web consultancy a couple dozen strong.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/welcome_to_the_dot_com_elegant_edition
+  ? !ruby/symbol title
+  : "Welcome to the Dot Com, Elegant Edition"
+- 
+  ? !ruby/symbol published
   : "2010-06-20 11:44 AM"
   ? !ruby/symbol rss_summary
   : "<p>I've been reading Jef Raskin's <a href=\"http://www.amazon.com/Humane-Interface-Directions-Designing-Interactive/dp/0201379376\">The Humane Interface</a>. It's packed with knowledge. Here's some.</p>\n"
