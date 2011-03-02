@@ -1,5 +1,8 @@
 @import 'reset.scss'
 
+html
+  webkit-text-size-adjust:none
+
 body
   font-family: "proxima-nova-1","proxima-nova-2", arial, sans-serif
   color: #282c2f
@@ -195,16 +198,14 @@ section#digital_index
     img
       width: 580px
       min-height: 200px
-      margin: 0 60px 0 0 
       float: left
+    h1, p, ul
+      width: 300px
+      float: right
     h1
       padding: 20px 0 0 0
       margin: 0 0 16px 0
     ul
-      position: absolute
-      width: 280px
-      bottom: 20px
-      right: 20px
       font-weight: 600
       color: #6d7174
 
