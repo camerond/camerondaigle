@@ -21,6 +21,11 @@ def file_changed(f)
 end
 
 namespace :site do
+  task :deploy do
+    system 'rake site:rebuild'
+    system 'rake site:upload'
+    system 'git push heroku'
+  end
   task :rebuild do
     a = []
     Dir["views/articles/*.markdown"].each do |f|
@@ -54,10 +59,5 @@ namespace :site do
       end
     end
     puts "#{tally} files uploaded"
-  end
-  task :init do
-    if !File.directory?('.s3_cache')
-      Dir.mkdir '.s3_cache'
-    end
   end
 end
