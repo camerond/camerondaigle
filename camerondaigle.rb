@@ -16,6 +16,10 @@ class Tilt::HamlTemplate
   end
 end
 
+before do
+  response.headers['Cache-Control'] = 'public, max-age=604800' if production?
+end
+
 get "/physical/?" do
   haml :'/physical/index'
 end
