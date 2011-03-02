@@ -1,0 +1,23 @@
+%html
+  = haml :"/layouts/_head"
+  %body#home
+    %header
+      %hgroup
+        %a(href='/')
+          %h1 The Url You Visited
+          %h2 Is So Not Found
+      %nav
+        %ul<
+          =nav_item("Digital")
+          =nav_item("Physical")
+          =nav_item("Articles")
+          =nav_item("About")
+    %ul.social
+      %li.twitter
+        %a(href="http://twitter.com/camerondaigle") Twitter
+      %li.facebook
+        %a(href="http://www.facebook.com/camerondaigle") Facebook
+      %li.flickr
+        %a(href="http://www.flickr.com/photos/camerondaigle") Flickr
+      %li.dribbble
+        %a(href="http://dribbble.com/cameron") Dribbble

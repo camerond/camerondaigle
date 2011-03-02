@@ -58,7 +58,7 @@ get '/' do
 end
 
 error 404 do
-  "NOOOOO"
+  haml :'/pages/notfound', :layout => false
 end
 
 helpers do
