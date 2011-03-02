@@ -19,6 +19,15 @@
   : "Regarding Fixed Positioning in Mobile Safari"
 - 
   ? !ruby/symbol published
+  : "2010-03-08 11:05 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>For the few dozen faithful of you that attended PodCamp Nashville 2010 (and the even fewer dozen that read my articles) (lots of love to you all), here are the slides from my segment of Griffin Technology's presentation, entitled \"Is The iPad Just A Big iPhone?\" (Yes, we realize that the word \"the\" before \"iPad\" is against Apple rules. Rebellion!)</p>\n"
+  ? !ruby/symbol slug
+  : /articles/podcamp_nashville_2010_presentation
+  ? !ruby/symbol title
+  : "Podcamp Nashville 2010 Presentation"
+- 
+  ? !ruby/symbol published
   : "2009-09-01 05:37 PM"
   ? !ruby/symbol rss_summary
   : "<p>This isn't strictly my design -- I was contracted in a development capacity -- but it was certainly an interesting change of pace to implement someone else's mockup and make it Web-friendly.</p>\n"
