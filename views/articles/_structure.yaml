@@ -5,9 +5,9 @@
   ? !ruby/symbol rss_summary
   : "<p>Most of the recaps that I have read of this year's conference are similar to last year's, in that they focus not on the content of the conference, but whether the conference should exist at all. (SXSWi is always followed by a flurry of recaps, because nobody is sure of what SXSWi is, so they are not sure if SXSWi is failing or succeeding.)</p>\n"
   ? !ruby/symbol slug
-  : /articles/sxsw_interactive_2011_one_persons_input
+  : /articles/sxsw_interactive_2011_recap_one_persons_input
   ? !ruby/symbol title
-  : "SXSW Interactive 2011: One Person's Input"
+  : "SXSW Interactive 2011 Recap: One Person's Input"
 - 
   ? !ruby/symbol published
   : "2011-03-01 11:44 PM"
