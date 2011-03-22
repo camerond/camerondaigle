@@ -4,4 +4,9 @@
     %h1= @meta['title']
     %h2= pretty_date @meta['published']
     ~ markypants(@text)
+    %aside
+      :markdown
+        Thanks for reading.
+
+        Comment threads aren't healthy for productive conversation. If you have a correction, feedback, or delicious recipe, email me at <camerondaigle@gmail.com> or AIM me at __camerondaigle__.
   = haml :"articles/_articles"
