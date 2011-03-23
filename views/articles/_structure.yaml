@@ -14,9 +14,9 @@
   ? !ruby/symbol rss_summary
   : "<p>Almost a year ago, I moved from rainy Nashville to sunny Florida and joined the good people at <a href=\"http://hashrocket.com\">Hashrocket</a> -- from a team with 2 designers (me and another fellow), 1 frontend developer (me) and .5 backend developers (.2 of that was me) to a mature, agile, bleeding-edge web consultancy a couple dozen strong.</p>\n"
   ? !ruby/symbol slug
-  : /articles/welcome_to_the_dot_com_elegant_edition
+  : /articles/from_expressionengine_to_sinatra_and_heroku
   ? !ruby/symbol title
-  : "Welcome to the Dot Com, Elegant Edition"
+  : "From ExpressionEngine to Sinatra and Heroku"
 - 
   ? !ruby/symbol published
   : "2010-06-20 11:44 AM"

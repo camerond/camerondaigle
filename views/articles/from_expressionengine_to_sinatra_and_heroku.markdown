@@ -1,10 +1,12 @@
-title: "Welcome to the Dot Com, Elegant Edition"
+title: "From ExpressionEngine to Sinatra and Heroku"
 published: "2011-03-01 11:44 PM"
 ---
 
 Almost a year ago, I moved from rainy Nashville to sunny Florida and joined the good people at [Hashrocket](http://hashrocket.com) -- from a team with 2 designers (me and another fellow), 1 frontend developer (me) and .5 backend developers (.2 of that was me) to a mature, agile, bleeding-edge web consultancy a couple dozen strong.
 
 ### Killing a fly with a big fat ugly hammer
+
+This is the story of how I escaped the bonds of ExpressionEngine to build a lightweight website & blog using [Sinatra](http://www.sinatrarb.com/), [Heroku](http://heroku.com), and [Amazon S3](http://aws.amazon.com/s3/).
 
 My old website was built in ExpressionEngine and hosted on [Eleven2](http://eleven2.com) (a good, cheap service). To write a post, I would log in and fill out a form, blog-style. I had a completely separate installation on my local Apache -- with a totally different database -- to test new templates. To upload new templates, I'd boot up Transmit and FTP those things up (default behavior in ExpressionEngine is even worse: pasting or writing new code into a textarea in the browser).
 
