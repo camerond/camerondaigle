@@ -181,7 +181,7 @@ section#about
     font-size: 12px
     line-height: 16px
     font-weight: 500
-    h1
+    h1, h2
       font-size: 14px
       line-height: 18px
       font-weight: bold
@@ -235,13 +235,14 @@ section#physical_index
 
 section#about
   article
-    width: 420px
-    padding: 30px 20px
-    float: left
-    h1
-      padding: 10px 0 16px 0
-    &.disclaimer
-      margin-left: 20px
+    section
+      width: 420px
+      padding: 30px 20px
+      float: left
+      h1, h2
+        padding: 10px 0 16px 0
+      & + section
+        margin-left: 20px
 
 section#article_index
   width: 400px
