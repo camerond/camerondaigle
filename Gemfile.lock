@@ -1,64 +1,76 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.7)
     aws-s3 (0.6.2)
       builder
       mime-types
       xml-simple
-    backports (1.18.2)
+    backports (2.3.0)
     builder (3.0.0)
-    configuration (1.2.0)
-    haml (3.0.25)
+    eventmachine (0.12.10)
+    haml (3.1.4)
     hassle (0.0.1)
       haml
       rack
-    heroku (1.18.0)
-      json (~> 1.5.1)
-      launchy (~> 0.3.2)
-      rest-client (>= 1.4.0, < 1.7.0)
-    json (1.5.1)
-    launchy (0.3.7)
-      configuration (>= 0.0.5)
-      rake (>= 0.8.1)
-    mime-types (1.16)
+    heroku (2.21.2)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
+    mime-types (1.17.2)
     monkey-lib (0.5.4)
       backports
-    nokogiri (1.4.4)
-    rack (1.2.1)
-    rack-rewrite (1.0.2)
-    rake (0.8.7)
+    nokogiri (1.5.0)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    rack-rewrite (1.2.1)
+    rack-test (0.6.1)
+      rack (>= 1.0)
     rdiscount (1.6.8)
-    rest-client (1.6.1)
+    rest-client (1.6.7)
       mime-types (>= 1.16)
-    sinatra (1.1.3)
-      rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
+    rubyzip (0.9.6.1)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
     sinatra-advanced-routes (0.5.1)
       monkey-lib (~> 0.5.0)
       sinatra (~> 1.0)
       sinatra-sugar (~> 0.5.0)
-    sinatra-reloader (0.5.0)
-      sinatra (~> 1.0)
-      sinatra-advanced-routes (~> 0.5.0)
-    sinatra-sugar (0.5.0)
+    sinatra-contrib (1.3.1)
+      backports (>= 2.0)
+      eventmachine
+      rack-protection
+      rack-test
+      sinatra (~> 1.3.0)
+      tilt (~> 1.3)
+    sinatra-reloader (1.0)
+      sinatra-contrib
+    sinatra-sugar (0.5.1)
       monkey-lib (~> 0.5.0)
       sinatra (~> 1.0)
-    tilt (1.2.2)
-    xml-simple (1.0.14)
-    ya2yaml (0.30)
+    term-ansicolor (1.0.7)
+    tilt (1.3.3)
+    xml-simple (1.1.1)
+    ya2yaml (0.31)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-s3 (= 0.6.2)
-  haml (= 3.0.25)
-  hassle (= 0.0.1)
-  heroku (= 1.18.0)
-  nokogiri (= 1.4.4)
-  rack-rewrite (= 1.0.2)
-  rdiscount (= 1.6.8)
-  sinatra (= 1.1.3)
-  sinatra-advanced-routes (= 0.5.1)
-  sinatra-reloader (= 0.5.0)
-  ya2yaml (= 0.30)
+  aws-s3
+  haml
+  hassle
+  heroku
+  nokogiri
+  rack-rewrite
+  rdiscount
+  sinatra
+  sinatra-advanced-routes
+  sinatra-reloader
+  ya2yaml
