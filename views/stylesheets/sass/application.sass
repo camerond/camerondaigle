@@ -7,7 +7,6 @@ body
   font-family: "proxima-nova-1","proxima-nova-2", arial, sans-serif
   color: #282c2f
   background: #3c4043
-  
   &#home
     background: #3c4043
     header
@@ -20,11 +19,18 @@ body
         border: none
         background: none
         ul
+          width: 400px
+          margin: 0 auto
+          overflow: hidden
+          display: block
           li
             a
               position: relative
+              display: block
+              float: left
               background: #eae9e2
-              padding: 8px 12px
+              padding: 4px 0
+              width: 100px
               &:after
                 position: absolute
                 top: 12%
@@ -35,11 +41,6 @@ body
                 content: ''
               &:hover
                 color: #4b7595
-            &:first-of-type a
-              padding-left: 24px
-              border-left: none
-            &:last-of-type a
-              padding-right: 24px
 header
   text-transform: uppercase
   min-width: 940px
@@ -141,7 +142,7 @@ ul.social
   padding: 0 100px
   margin: 0 auto
   li
-    width: 25%
+    width: 33%
     float: left
     a
       display: block
@@ -160,11 +161,6 @@ ul.social
         background-position: -21px 0
         &:hover
           background-position: -21px -21px
-    &.flickr
-      a
-        background-position: -42px 0
-        &:hover
-          background-position: -42px -21px
     &.dribbble
       a
         background-position: -63px 0
