@@ -1,5 +1,3 @@
-$KCODE = 'UTF8'
-
 require 'aws/s3'
 require 'rdiscount'
 require 'yaml'
