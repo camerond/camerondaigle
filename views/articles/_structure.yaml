@@ -1,6 +1,33 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2011-07-26 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>Since writing about <a href=\"http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller\">the UI controller process</a> that we use for clean design handoffs, I've added another piece to the puzzle: a cleaner way to generate useful filler content through the <a href=\"http://faker.rubyforge.org/\">Faker</a> gem.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/the_ui_controller_part_2_faking_it
+  ? !ruby/symbol title
+  : "The UI Controller, part 2: Faking It"
+- 
+  ? !ruby/symbol published
+  : "2011-06-29 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>What's the best way for a design to make its way from PSD to working implementation? Ask a dozen development teams and you'll get a dozen different answers (and probably start a fight). Here's our answer out of the dozen (the other 11 are up to you – stay frosty out there). It's lo-fi, but helps keep everyone on the team on the same page.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/managing_design_handoffs_with_the_ui_controller
+  ? !ruby/symbol title
+  : "Managing Design Handoffs with the UI Controller"
+- 
+  ? !ruby/symbol published
+  : "2011-05-10 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p><a href=\"http://twitter.com/biggunsdesign\">Daniel Ariza</a> and I flew out to Las Vegas last week to attend <a href=\"http://futureinsightslive.com/\">Future Insights Live</a>, and proceeded to violate the city motto by bringing back some knowledge, just for you. Here we go:</p>\n"
+  ? !ruby/symbol slug
+  : /articles/nuggets_of_wisdom_from_future_insights_live
+  ? !ruby/symbol title
+  : "Nuggets of wisdom from Future Insights Live"
+- 
+  ? !ruby/symbol published
   : "2011-03-21 17:05 PM"
   ? !ruby/symbol rss_summary
   : "<p>Most of the recaps that I have read of this year's conference are similar to last year's, in that they focus not on the content of the conference, but whether the conference should exist at all. (SXSWi is always followed by a flurry of recaps, because nobody is sure of what SXSWi is, so they are not sure if SXSWi is failing or succeeding.)</p>\n"

@@ -3,6 +3,12 @@
   %article
     %h1= @meta['title']
     %h2= pretty_date @meta['published']
+    - if @meta['original_version']
+      %aside.original_version
+        %p
+          (originally published on The Hashrocket Blog – visit the
+          %a{:href => @meta['original_version']} original version
+          if you like)
     ~ markypants(@text)
     %aside
       :markdown
