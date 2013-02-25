@@ -1,5 +1,17 @@
 @import 'reset.scss'
 
+= box-sizing($type: border-box)
+  @each $prefix in moz, ms, webkit
+    -#{$prefix}-box-sizing: $type
+  box-sizing: $type
+= border-box
+  +box-sizing(border-box)
+= max-width($width)
+  @media screen and (max-width: #{$width}px)
+    @content
+= site_width
+  max-width: 940px
+
 html
   webkit-text-size-adjust: none
 
@@ -13,6 +25,9 @@ body
       padding-top: 160px
       margin-bottom: 30px
       min-width: 400px
+      +max-width(480)
+        padding-top: 20px
+        min-width: 0
       hgroup
         margin-bottom: 20px
       nav
@@ -23,14 +38,18 @@ body
           margin: 0 auto
           overflow: hidden
           display: block
+          +max-width(480)
+            width: 100%
+            +border-box
+            padding: 0 20px
           li
+            float: left
+            width: 25%
             a
               position: relative
               display: block
-              float: left
               background: #eae9e2
               padding: 4px 0
-              width: 100px
               &:after
                 position: absolute
                 top: 12%
@@ -43,9 +62,8 @@ body
                 color: #4b7595
 header
   text-transform: uppercase
-  min-width: 940px
   hgroup
-    background: url("/images/bg_header.png") center repeat-x #3c4043
+    background: url("/images/bg_header.png") center 40px repeat-x #3c4043
     text-align: center
     a
       display: block
@@ -63,22 +81,32 @@ header
         font-size: 10px
         font-weight: 600
         padding: 0 0 10px 0
+    +max-width(480)
+      background-position: center 20px
+      background-size: 500px auto
+      a
+        h1
+          padding-top: 65px
   nav
     border-bottom: 1px solid #cbc9bc
-    text-align: center
-    line-height: 26px
+    line-height: 30px
     background: #eae9e2
+    overflow: hidden
     ul
-      display: inline
       width: 320px
+      margin: 0 auto
+      +max-width(480)
+        width: 100%
       li
-        display: inline
+        float: left
+        width: 25%
         a
+          display: block
           font-size: 10px
           font-weight: 600
           text-align: center
           color: #282c2f
-          padding: 4px 12px
+          padding-top: 3px
           &:hover
             color: #4b7595
         &.selected a
@@ -87,7 +115,6 @@ header
             color: #282c2f
 footer
   width: 100%
-  min-width: 940px
   clear: both
   color: #707477
   font-weight: bold
@@ -115,9 +142,11 @@ footer
 #content
   background: #eae9e2
   #wrapper
-    width: 940px
+    max-width: 940px
     margin: 0 auto
     padding: 40px 20px 0 20px
+    +max-width(640)
+      padding: 10px
 
 nav.article_listing
   margin: 0 0 40px 0
@@ -139,8 +168,8 @@ nav.article_listing
 
 ul.social
   width: 200px
-  padding: 0 100px
-  margin: 0 auto
+  margin: 0 auto 40px auto
+  overflow: hidden
   li
     width: 33%
     float: left
@@ -194,19 +223,30 @@ section#about
       font-weight: 600
       &:hover
         border-bottom: 1px solid #cbc9bc
+
 section#digital_index
   article
     position: relative
     overflow: hidden
-    padding: 5px 0 5px 5px
-    margin: -5px 0 40px -5px
-    img
-      width: 580px
-      min-height: 200px
-      float: left
-    h1, p, ul
-      width: 300px
+    margin: 0 0 40px 0
+    .copy
       float: right
+      width: 34%
+    img
+      display: block
+      float: left
+      width: 64.4%
+      max-width: 580px
+    +max-width(640)
+      margin: 0 0 20px 0
+      img
+        width: 100%
+        display: block
+        margin: 0 auto
+        float: none
+      .copy
+        float: none
+        width: auto
     h1
       padding: 20px 0 0 0
       margin: 0 0 16px 0
@@ -219,44 +259,71 @@ section#digital_index
 section#physical_index
   section
     clear: both
-    &.two_items
+    &.three_items
+      margin-left: -20px
       article
-        width: 460px
+        width: 33.33%
+        padding-left: 20px
+    &.two_items
+      margin-left: -20px
+      article
+        width: 50%
+        padding-left: 20px
+    +max-width(480)
+      &.three_items,
+      &.two_items
+        margin-left: 0
+        article
+          padding-left: 0
+          width: 100%
+          text-align: center
+          img
+            width: auto
+            max-width: 100%
+            display: inline
   article
-    width: 300px
-    margin: 0 20px 30px 0
+    width: 100%
+    margin: 0 0 30px 0
     float: left
+    +border-box
     img
-      min-width: 300px
-      min-height: 300px
       margin: 0 0 10px 0
       display: block
+      width: 100%
     h1, p
       margin: 0 10px
     &:last-of-type
       margin-right: 0
 
 section#about
+  img
+    width: 100%
   article
     section
-      width: 420px
-      padding: 30px 20px
+      width: 46%
+      padding: 30px 2%
       float: left
+      +max-width(640)
+        width: auto
+        padding: 0 10px
       h1, h2
         padding: 10px 0 16px 0
-      & + section
-        margin-left: 20px
 
 section#article_index
   width: 400px
   margin: 0 auto
+  +max-width(480)
+    width: 100%
 
 section#article_show
   article
-    padding: 0 10px
     margin: 0 0 40px 0
-    width: 550px
+    width: 55%
     float: left
+    +max-width(640)
+      width: 100%
+      padding: 20px 0
+      margin: 0
     h1
       font-size: 20px
       color: #282c2f
@@ -287,8 +354,9 @@ section#article_show
       margin: 0 0 20px 0
       padding: 20px
       background: rgba(255,255,255,.8)
-      width: 510px
+      width: 100%
       overflow-x: auto
+      +border-box
     ul
       list-style-type: disc
       padding: 0 40px
@@ -318,8 +386,14 @@ section#article_show
         margin: 0
         padding: 0
         border: 0
+    +max-width(640)
+      ul, ol
+        padding: 0 20px
+      aside
+        margin: 20px 0
+        padding: 10px 0
   nav.article_listing
-    width: 360px
+    width: 40%
     float: right
     ul
       li
@@ -331,6 +405,18 @@ section#article_show
             padding-left: 29px
             margin-left: 0
             background: #e3e2da url("/images/bg_active_post.png") left center no-repeat
+    +max-width(640)
+      width: 100%
+      float: none
+      clear: both
+      ul
+        li
+          a
+            margin-left: 0
+          &.selected
+            a
+              padding-left: 15px
+              background: #e3e2da
 
 
 
