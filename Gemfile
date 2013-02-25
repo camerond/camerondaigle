@@ -6,6 +6,7 @@ gem 'hassle'
 gem 'nokogiri'
 gem 'rack-rewrite'
 gem 'rdiscount'
+gem 'sass'
 gem 'sinatra'
 gem 'ya2yaml'
 
