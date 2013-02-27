@@ -34,24 +34,28 @@ There's nothing super-flashy about the implementation of this site, but I think 
 
 The Physical & Digital pages are just static for now (they do contain repeating content, but sometimes editing a text file is _still_ faster than building out a whole data structure just to display one page.) The Articles page, however makes use of this loop, culled from the second link I mentioned earlier.
 
-    get "/articles/:article/?" do
-      file = "views/articles/#{params[:article]}.markdown"
-      if File.exist?(file)
-        @articles = load_structure('articles')
-        load_into_haml('/articles/show', file)
-      else
-        404
-      end
-    end
+```ruby
+get "/articles/:article/?" do
+  file = "views/articles/#{params[:article]}.markdown"
+  if File.exist?(file)
+    @articles = load_structure('articles')
+    load_into_haml('/articles/show', file)
+  else
+    404
+  end
+end
+```
 
 The method looks for its matching Markdown file and parses it into a template. The `load_into_haml` bit is my own, moved into its own helper method for cleanliness' sake.
 
-    def load_into_haml(template, file)
-      article = File.read(file).split("---\n")
-      @meta = YAML::load(article[0])
-      @text = article[1]
-      haml template.to_sym
-    end
+```ruby
+def load_into_haml(template, file)
+  article = File.read(file).split("---\n")
+  @meta = YAML::load(article[0])
+  @text = article[1]
+  haml template.to_sym
+end
+```
 
 I have to credit [Nanoc](http://nanoc.stoneship.org/) with this cute idea: that `split` method allows me to add the article title and date as metadata in the Markdown file, separated by the main content by three hyphens. [Check it out here](https://github.com/camerond/camerondaigle/raw/master/views/articles/regarding_fixed_positioning_in_mobile_safari.markdown).
 
@@ -59,24 +63,26 @@ I have to credit [Nanoc](http://nanoc.stoneship.org/) with this cute idea: that 
 
 But then, if the title of each post is embedded in a separate file, how does the article listing display properly? Obviously opening and reading every Markdown file would be silly -- so instead I wrote a Rake task that indexes all of the articles into a YAML file. It's not as beautiful as it could be, but then, I haven't had any of the Ruby guys at work critique it yet:
 
-    task :rebuild do
-      a = []
-      Dir["views/articles/*.markdown"].each do |f|
-        article = File.read(f).split("---\n")
-        meta = YAML::load(article[0])
-        a.push({
-          :title => meta['title'],
-          :published => meta['published'],
-          :slug => "/articles/" << File.basename(f, ".markdown"),
-          :rss_summary => RDiscount.new(article[1].strip.split("\n")[0]).to_html
-        })
-        puts "indexing #{File.basename(f)}"
-      end
-      puts "#{a.count} articles indexed"
-      File.open("views/articles/_structure.yaml", 'w') {
-        |f| f.write a.sort_by{|a| a[:published]}.reverse.ya2yaml
-      }
-    end
+```ruby
+task :rebuild do
+  a = []
+  Dir["views/articles/*.markdown"].each do |f|
+    article = File.read(f).split("---\n")
+    meta = YAML::load(article[0])
+    a.push({
+      :title => meta['title'],
+      :published => meta['published'],
+      :slug => "/articles/" << File.basename(f, ".markdown"),
+      :rss_summary => RDiscount.new(article[1].strip.split("\n")[0]).to_html
+    })
+    puts "indexing #{File.basename(f)}"
+  end
+  puts "#{a.count} articles indexed"
+  File.open("views/articles/_structure.yaml", 'w') {
+    |f| f.write a.sort_by{|a| a[:published]}.reverse.ya2yaml
+  }
+end
+```
 
 Loop through the files, read the YAML metadata, push it to an array, and write the array to a single YAML file. The article slug is just read straight from the filename, and the RSS summary just pulls out the first paragraph. (The `ya2yaml` method is due to Ruby's built-in YAML builder freaking out about UTF-8 characters.)
 
@@ -92,19 +98,23 @@ I'm a designer, after all, so I'm a little obsessive about enabling [Smartypants
 
 Confused? Yeah, I was. There's not a lot of good info on this issue for amateur Rubyists like myself. I thrashed on this problem for a while before I realized that all I needed was a helper method for passing text variables ...
 
-    def markypants(article)
-        RDiscount.new(article, :smart).to_html
-    end
+```ruby
+def markypants(article)
+    RDiscount.new(article, :smart).to_html
+end
+```
 
 ... and for `:markdown` blocks within HAML templates, a class override for Tilt:
 
-    class Tilt::HamlTemplate
-      module ::Haml::Filters::Markdown
-        def render(text)
-          RDiscount.new(text, :smart).to_html
-        end
-      end
+```ruby
+class Tilt::HamlTemplate
+  module ::Haml::Filters::Markdown
+    def render(text)
+      RDiscount.new(text, :smart).to_html
     end
+  end
+end
+```
 
 This is one of those problems that won't matter to you unless you come across it, in which case it will _really_ matter to you.
 
@@ -112,10 +122,12 @@ This is one of those problems that won't matter to you unless you come across it
 
 Lastly, Markdown doesn't accept HTML classes of any kind, but I wanted to add special styled captions to images, so I have a Javascript method that takes the image `alt` (which Markdown _does_ accept) and append it to the paragraph. Here:
 
-    $("#article_show img").each(function() {
-    var $img = $(this);
-    $img.parent('p').addClass('image').append($img.attr('alt'));
-    });
+```javascript
+$("#article_show img").each(function() {
+var $img = $(this);
+$img.parent('p').addClass('image').append($img.attr('alt'));
+});
+```
 
 Whee! My Markdown is now free of HTML.
 

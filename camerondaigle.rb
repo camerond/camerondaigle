@@ -2,19 +2,13 @@ require 'sinatra'
 require 'yaml'
 require 'haml'
 require 'tilt'
-require 'rdiscount'
+require 'glorify'
 require 'nokogiri'
 
 require "sinatra/reloader" if development?
 require 'hassle' if production?
 
-class Tilt::HamlTemplate
-  module ::Haml::Filters::Markdown
-    def render(text)
-      RDiscount.new(text, :smart).to_html
-    end
-  end
-end
+Tilt.prefer Sinatra::Glorify::Template
 
 before do
   response.headers['Cache-Control'] = 'public, max-age=604800' if production?
@@ -84,13 +78,6 @@ helpers do
   end
   def pretty_date(date)
     Date.parse(date).strftime('%B %e, %Y')
-  end
-  def markypants(article='', &block)
-    if article
-      RDiscount.new(article, :smart).to_html
-    else
-      RDiscount.new(block, :smart).to_html
-    end
   end
 end
 

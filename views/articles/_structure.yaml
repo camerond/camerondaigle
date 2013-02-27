@@ -1,7 +1,16 @@
 --- 
 - 
   ? !ruby/symbol published
-  : "2011-07-26 08:00:00 AM"
+  : "2013-01-28 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>My use of <a href=\"http://faker.rubyforge.org/\">Faker</a> alongside our UI Controller process (detailed here: <a href=\"http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller\">part 1</a>, <a href=\"http://blog.hashrocket.com/posts/the-ui-controller-part-2-faking-it\">part 2</a>) has developed to the point that I have deemed it worthy of one more post on the topic.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/the_ui_controller_part_3_the_ui_helper
+  ? !ruby/symbol title
+  : "The UI Controller, part 3: The UI Helper"
+- 
+  ? !ruby/symbol published
+  : "2012-07-26 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>Since writing about <a href=\"http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller\">the UI controller process</a> that we use for clean design handoffs, I've added another piece to the puzzle: a cleaner way to generate useful filler content through the <a href=\"http://faker.rubyforge.org/\">Faker</a> gem.</p>\n"
   ? !ruby/symbol slug
@@ -10,7 +19,7 @@
   : "The UI Controller, part 2: Faking It"
 - 
   ? !ruby/symbol published
-  : "2011-06-29 08:00:00 AM"
+  : "2012-06-29 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>What's the best way for a design to make its way from PSD to working implementation? Ask a dozen development teams and you'll get a dozen different answers (and probably start a fight). Here's our answer out of the dozen (the other 11 are up to you – stay frosty out there). It's lo-fi, but helps keep everyone on the team on the same page.</p>\n"
   ? !ruby/symbol slug

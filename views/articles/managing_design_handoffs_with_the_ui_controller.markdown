@@ -1,5 +1,5 @@
 title: "Managing Design Handoffs with the UI Controller"
-published: "2011-06-29 08:00:00 AM"
+published: "2012-06-29 08:00:00 AM"
 original_version: "http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller"
 ---
 
@@ -21,44 +21,50 @@ We also use separate, static layouts, allowing us to make changes to the page co
 
 Here's an example UI controller from [LensRentals.com](http://lensrentals.com), a recently released Hashrocket site:
 
-    # in ui_controller.rb
-    class UiController < ApplicationController
-      layout :choose_layout
-      private
-        def choose_layout
-          case action_name
-          when /(home)|(cart)|(^email)|(^_)|(^[45])/
-            false
-          when /^(gift)|(account)|(checkout)/
-            "no_nav"
-          else
-            "ui"
-          end
-        end
+```ruby
+# in ui_controller.rb
+class UiController < ApplicationController
+  layout :choose_layout
+  private
+    def choose_layout
+      case action_name
+      when /(home)|(cart)|(^email)|(^_)|(^[45])/
+        false
+      when /^(gift)|(account)|(checkout)/
+        "no_nav"
+      else
+        "ui"
+      end
     end
+end
 
-    # in routes.rb
-    match 'ui(/:action)', controller: 'ui'
+# in routes.rb
+match 'ui(/:action)', controller: 'ui'
+```
 
-    # in /views/ui/index.html.haml
-    %ul
-      - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
-        - wireframe = File.basename(file,'.html.haml')
-        -  unless wireframe == 'index' || wireframe.match(/^_/)
-          %li= link_to wireframe.titleize, action: wireframe
+```haml
+/ in /views/ui/index.html.haml
+%ul
+  - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
+    - wireframe = File.basename(file,'.html.haml')
+    -  unless wireframe == 'index' || wireframe.match(/^_/)
+      %li= link_to wireframe.titleize, action: wireframe
+```
 
 And [here's what that looks like for LensRentals](http://d.pr/i/aC4w). Just a list of views (a lot of them, as it's a fully-launched product). It's pretty trivial to make make the index view smarter if views pile up; for example, another project of ours splits up views into sections based on their first word (e.g. `user_account_show` & `user_account_edit` would both be grouped under an "User" heading).
 
 That's the ultra-basic overview of our UI directory. It's a simple, organic tool that has developed over time to do exactly what we need it to do, without requiring a lot of infrastructure or maintenance. Plus, it allows me as a front-end guy to poke around in a UI view and use Ruby loops to generate lots of example content quickly:
 
-    %table
-      %thead
-        - ["First name", "MI", "Last name", "Phone", "Email", "Location"].each do |th|
-          %th= th
-      %tbody
-        - 20.times do
-          %tr
-            - ["John", "Q", "Doe", "555-555-1234", "john@email.com", "Chicago, IL"].each do |td|
-              %td= td
+```haml
+%table
+  %thead
+    - ["First name", "MI", "Last name", "Phone", "Email", "Location"].each do |th|
+      %th= th
+  %tbody
+    - 20.times do
+      %tr
+        - ["John", "Q", "Doe", "555-555-1234", "john@email.com", "Chicago, IL"].each do |td|
+          %td= td
+```
 
 Whee!

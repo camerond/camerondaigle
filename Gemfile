@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
 gem 'aws-s3'
+gem 'glorify'
 gem 'haml'
 gem 'hassle'
 gem 'nokogiri'
 gem 'rack-rewrite'
-gem 'rdiscount'
 gem 'sass'
 gem 'sinatra'
 gem 'ya2yaml'

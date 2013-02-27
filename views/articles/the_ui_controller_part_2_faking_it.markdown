@@ -1,5 +1,5 @@
 title: "The UI Controller, part 2: Faking It"
-published: "2011-07-26 08:00:00 AM"
+published: "2012-07-26 08:00:00 AM"
 original_version: "http://blog.hashrocket.com/posts/the-ui-controller-part-2-faking-it"
 ---
 
@@ -17,18 +17,20 @@ Faker's a little Ruby gem that's actually intended primarily to generate data fo
 
 Here's an example straight from a current project of mine:
 
-    %table
-      %thead
-        - ["School Name", "Students", "District", "City", "State"].each do |th|
-          %th= th
-      %tbody
-        - 5.times do
-          %tr
-            %td= link_to Faker::Lorem.words(3).join(' '), "#"
-            %td 3943
-            %td 4
-            %td= Faker::Address.city
-            %td= Faker::Address.state_abbr
+```haml
+%table
+  %thead
+    - ["School Name", "Students", "District", "City", "State"].each do |th|
+      %th= th
+  %tbody
+    - 5.times do
+      %tr
+        %td= link_to Faker::Lorem.words(3).join(' '), "#"
+        %td 3943
+        %td 4
+        %td= Faker::Address.city
+        %td= Faker::Address.state_abbr
+```
 
 Hey, look at that! Thanks to a simple `each` loop and some calls to Faker, we now have a table with some reasonably realistic content.
 
@@ -38,20 +40,24 @@ But you might notice that I had to do a `.join` call after requesting `Faker::lo
 
 So let's break this down: if we just call `Faker::Lorem.paragraphs(3)`, we're going to get back an array of 3 strings. We'll need to wrap those in a `<p>` tag and concatenate them together, and call `.html_safe()` (so the paragraph tags don't get filtered to `&lt;p&gt;`). So if we want to make 3 paragraphs, our call will look something like this:
 
-    Faker::Lorem.paragraphs(3).map{|text| content_tag(:p, text)}.join.html_safe
+```ruby
+Faker::Lorem.paragraphs(3).map{|text| content_tag(:p, text)}.join.html_safe
+```
 
 Yuck, I don't know about you, but I don't want to ever type that more than once. Let's put it in a helper.
 
-    module UiHelper
+```ruby
+module UiHelper
 
-      def lorem(paragraphs)
-        Faker::Lorem.paragraphs(paragraphs).map{|text| content_tag(:p, text)}.join.html_safe
-      end
+  def lorem(paragraphs)
+    Faker::Lorem.paragraphs(paragraphs).map{|text| content_tag(:p, text)}.join.html_safe
+  end
 
-    end
-
+end
+```
 Hooray! Now you can write one clean line in your HAML and Faker will do the work for you.
 
-    = lorem(3)
-
+```haml
+= lorem(3)
+```
 Beautiful. No more trips to the [Lorem Ipsum Generator](http://lipsum.com/) for me.
