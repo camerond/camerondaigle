@@ -3,7 +3,7 @@
   ? !ruby/symbol published
   : "2013-01-28 08:00:00 AM"
   ? !ruby/symbol rss_summary
-  : "<p>My use of <a href=\"http://faker.rubyforge.org/\">Faker</a> alongside our UI Controller process (detailed here: <a href=\"http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller\">part 1</a>, <a href=\"http://blog.hashrocket.com/posts/the-ui-controller-part-2-faking-it\">part 2</a>) has developed to the point that I have deemed it worthy of one more post on the topic.</p>\n"
+  : "<p>My use of <a href=\"http://faker.rubyforge.org/\">Faker</a> alongside our UI Controller process (detailed here: <a href=\"http://camerondaigle.com/articles/the_ui_controller_part_2_faking_it\">part 1</a>, <a href=\"http://camerondaigle.com/articles/managing_design_handoffs_with_the_ui_controller\">part 2</a>) has developed to the point that I have deemed it worthy of one more post on the topic.</p>\n"
   ? !ruby/symbol slug
   : /articles/the_ui_controller_part_3_the_ui_helper
   ? !ruby/symbol title
