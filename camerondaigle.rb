@@ -8,7 +8,13 @@ require 'nokogiri'
 require "sinatra/reloader" if development?
 require 'hassle' if production?
 
-Tilt.prefer Sinatra::Glorify::Template
+class Tilt::HamlTemplate
+  module ::Haml::Filters::Markdown
+    def render(text)
+      Redcarpet::Render::SmartyPants.render text
+    end
+  end
+end
 
 before do
   response.headers['Cache-Control'] = 'public, max-age=604800' if production?
@@ -78,6 +84,9 @@ helpers do
   end
   def pretty_date(date)
     Date.parse(date).strftime('%B %e, %Y')
+  end
+  def smart_glorify(text)
+    Redcarpet::Render::SmartyPants.render(glorify(text))
   end
 end
 
