@@ -202,14 +202,19 @@ section#digital_index
     .copy
       float: right
       width: 34%
-    img
+    .slides
       display: block
       float: left
       width: 64.4%
       max-width: 580px
+      img
+        max-width: 100%
+        cursor: pointer
+        + img
+          display: none
     +max-width(640)
       margin: 0 0 20px 0
-      img
+      .slides
         width: 100%
         display: block
         margin: 0 auto
