@@ -10,6 +10,15 @@
   : "The UI Controller, part 3: The UI Helper"
 - 
   ? !ruby/symbol published
+  : "2012-10-12 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>Hashrocket projects kick off in a big way: the client comes to town (or occasionally we go to them), we all sit in a big room, and we make wireframes and write story cards for up to 3 days solid. But it hasn't always been this way.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/survival_tips_for_live_wireframing
+  ? !ruby/symbol title
+  : "Survival Tips For Live Wireframing"
+- 
+  ? !ruby/symbol published
   : "2012-07-26 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>Since writing about <a href=\"http://blog.hashrocket.com/posts/managing-design-handoffs-with-the-ui-controller\">the UI controller process</a> that we use for clean design handoffs, I've added another piece to the puzzle: a cleaner way to generate useful filler content through the <a href=\"http://faker.rubyforge.org/\">Faker</a> gem.</p>\n"
