@@ -45,6 +45,7 @@ GEM
     rack-rewrite (1.3.3)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rdiscount (2.1.7)
     redcarpet (2.2.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
@@ -86,6 +87,7 @@ DEPENDENCIES
   heroku
   nokogiri
   rack-rewrite
+  rdiscount
   sass
   sinatra
   sinatra-advanced-routes
