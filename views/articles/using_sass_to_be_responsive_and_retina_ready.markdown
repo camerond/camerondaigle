@@ -11,14 +11,18 @@ There are two crucial lines of code you'll need to make pretty much anything res
 
 Put this in your `<head>`:
 
-    %meta(name="viewport" content="width=device-width, initial-scale=1")
+```haml
+%meta(name="viewport" content="width=device-width, initial-scale=1")
+```
 
 This just tells the viewport to conform to your device width (so you don't have landscape mode appear larger than portrait mode, for instance) and scale properly. Some Googlings of this technique also might result in code recommendations to add in a `maximum-scale` value; this disables pinch-zooming and usually isn't necessary.
 
 Put this in your Sass (or SCSS, whatever):
 
-    body
-        -webkit-text-size-adjust: none
+```sass
+body
+    -webkit-text-size-adjust: none
+```
 
 You probably know this one - it prevents iOS from sizing up your text for readability. If your site's properly responsive, you're taking care of font size with @media queries.
 
@@ -26,37 +30,45 @@ You probably know this one - it prevents iOS from sizing up your text for readab
 
 Here's our mixin for keeping ourselves sane in the world of media queries. (This one and others require a newer version of Sass that supports passing content blocks to mixins; you should be using that anyway.)
 
-    = max-width($width: 640)
-        @media screen and (max-width: #{$width}px)
-            @content
+```sass
+= max-width($width: 640)
+    @media screen and (max-width: #{$width}px)
+        @content
+```
 
 Easy as pie. Just set the `$width` value to whatever you decide is your primary site breakpoint, and add others as necessary. This lets us write rules quickly and read them easily:
 
-    .foo
-        margin: 60px
-        +max-width
-            margin: 40px
-        +max-width(480)
-            margin: 20px
+```sass
+.foo
+    margin: 60px
+    +max-width
+        margin: 40px
+    +max-width(480)
+        margin: 20px
+```
 
 ### The Retina Mixin
 
 Retina backgrounds are their own set of `@media`-based pain. Here are a pair of mixins that made our lives easier:
 
-    = retina
-        @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2)
-            @content
-    = retina_bg($filename, $dimensions: false, $ext:"png")
-        background-image: image-url("#{$filename}.#{$ext}")
-        +retina
-        background-image: image-url("#{$filename}@2x.#{$ext}")
-        @if $dimensions != false
-            background-size: $dimensions
+```sass
+= retina
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2)
+        @content
+= retina_bg($filename, $dimensions: false, $ext:"png")
+    background-image: image-url("#{$filename}.#{$ext}")
+    +retina
+    background-image: image-url("#{$filename}@2x.#{$ext}")
+    @if $dimensions != false
+        background-size: $dimensions
+```
 
 The `retina` mixin is just generally helpful; the `retina_bg` mixin is absolutely essential. With `retina_bg`, we can write our retina background image styles in one line:
 
-    .bar
-        +retina_bg("logo", 100px)
+```sass
+.bar
+    +retina_bg("logo", 100px)
+```
 
 Now non-retina devices use `logo.png`, while retina uses `logo@2x.png`, like the iOS filename convention. It's worth noting that `background-size` isn't always necessary, so it's behind a conditional and just doesn't assign if it's not specified.
 
