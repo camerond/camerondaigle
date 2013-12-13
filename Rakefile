@@ -22,7 +22,7 @@ namespace :site do
   task :deploy do
     system 'rake site:rebuild'
     system 'rake site:upload'
-    system 'git push heroku'
+    system 'git push heroku master'
   end
   task :rebuild do
     a = []
