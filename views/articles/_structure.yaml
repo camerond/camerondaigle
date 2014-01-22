@@ -1,6 +1,15 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2014-01-13 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>I'm a huge proponent of increasing designer/developer communication and easing the handoff between static and implemented markup – and Stagehand is my latest attempt to bridge the gap.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/rich_ui_prototyping_with_stagehand
+  ? !ruby/symbol title
+  : "Rich UI Prototyping with Stagehand"
+- 
+  ? !ruby/symbol published
   : "2013-08-16 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>We launched a new version of the Hashrocket site recently. This new design is a ground-up redesign &amp; rewrite of the frontend – much of the backend was rewritten as well, but I'm a design guy, so if you want a backend breakdown, you'll have to buy Matt Polito an ice cream cake or something. Here's some cool stuff about the frontend.</p>\n"
