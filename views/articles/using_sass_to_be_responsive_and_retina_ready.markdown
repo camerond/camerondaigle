@@ -1,4 +1,4 @@
-title: "Using SASS To Be Responstive and Retina-Ready"
+title: "Using SASS To Be Responsive and Retina-Ready"
 published: "2013-04-26 08:00:00 AM"
 original_version: "http://hashrocket.com/blog/posts/using-sass-to-be-responsive-and-retina-ready"
 ---
