@@ -1,6 +1,15 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2013-08-16 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>We launched a new version of the Hashrocket site recently. This new design is a ground-up redesign &amp; rewrite of the frontend – much of the backend was rewritten as well, but I'm a design guy, so if you want a backend breakdown, you'll have to buy Matt Polito an ice cream cake or something. Here's some cool stuff about the frontend.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/anatomy_of_the_new_hashrocket_frontend_design
+  ? !ruby/symbol title
+  : "Anatomy of the new Hashrocket: Frontend Design"
+- 
+  ? !ruby/symbol published
   : "2013-04-26 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>Responsive design is much more than just a buzzword and a loosely-organized set of principles – it's a design technique that requires you to approach almost every problem differently than a traditional website. It's also a pain to code. We're neck-deep in a new Hashrocket site design that's fully responsive and uses retina assets – and from that project (and others like it) we've ended up with a pretty solid starting point for tackling those requirements:</p>\n"
