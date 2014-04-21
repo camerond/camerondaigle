@@ -1,6 +1,24 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2014-04-17 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>Here's a SASS pattern for constructing mixins that I've been enjoying lately – and has saved me from a number of CSS-related headaches.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/sass_button_mixins_for_fun_and_profit
+  ? !ruby/symbol title
+  : "Sass Button Mixins for Fun & Profit"
+- 
+  ? !ruby/symbol published
+  : "2014-03-24 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>This past week I pushed a pretty thorough rewrite &amp; cleanup of Minical, my jQuery datepicker plugin. I originally opened it up just to add one little feature, but quickly became sidetracked by how lousy the codebase was and how much better I could write it now (note: this happens with everything I've ever coded or designed, and is completely normal).</p>\n"
+  ? !ruby/symbol slug
+  : /articles/refactoring_minical_a_cup_of_coffeescript
+  ? !ruby/symbol title
+  : "Refactoring Minical: a cup of Coffeescript"
+- 
+  ? !ruby/symbol published
   : "2014-01-13 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>I'm a huge proponent of increasing designer/developer communication and easing the handoff between static and implemented markup – and Stagehand is my latest attempt to bridge the gap.</p>\n"
