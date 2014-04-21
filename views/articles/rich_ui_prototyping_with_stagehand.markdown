@@ -13,7 +13,7 @@ Stagehand is a jQuery plugin that allows non-developer-types to simulate the sta
 %section(data-stage='search' data-scene='blank slate')
   %h1 Search for something!
 
-%section(data-stage='search' data-scene='results'
+%section(data-stage='search' data-scene='results')
   // cool search result listing
 
 %section(data-stage='search' data-scene='no results')
