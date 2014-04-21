@@ -26,7 +26,7 @@ $(function() {
           $next = $img.next().length ? $img.next() : $container.children().first();
       $img.fadeOut(100, function() {
         $next.fadeIn(200, function() {
-          $container.css("min-height", "auto");
+          $container.css("min-height", 0);
         });
       });
     },
