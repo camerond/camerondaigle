@@ -1,6 +1,15 @@
 --- 
 - 
   ? !ruby/symbol published
+  : "2014-09-04 08:00:00 AM"
+  ? !ruby/symbol rss_summary
+  : "<p>Organizing responsive styles into your existing stylesheet is always a challenge, but a simple Sass mixin can provide you with a dead-simple way to inject responsiveness wherever it's needed.</p>\n"
+  ? !ruby/symbol slug
+  : /articles/drop_in_responsive_styles_with_sass
+  ? !ruby/symbol title
+  : "Drop-in Responsive Styles With Sass"
+- 
+  ? !ruby/symbol published
   : "2014-04-17 08:00:00 AM"
   ? !ruby/symbol rss_summary
   : "<p>Here's a SASS pattern for constructing mixins that I've been enjoying lately – and has saved me from a number of CSS-related headaches.</p>\n"
