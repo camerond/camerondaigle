@@ -17,5 +17,4 @@ gem 'ya2yaml'
 group :development do
   gem 'sinatra-advanced-routes'
   gem 'sinatra-reloader'
-  gem 'heroku'
 end
