@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'aws-s3'
+gem 'foreman'
 gem 'glorify'
 gem 'haml'
 gem 'hassle'
