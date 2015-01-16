@@ -1,4 +1,6 @@
 source 'http://rubygems.org'
+ruby "2.0.0"
+#ruby-gemset=camerondaigle
 
 gem 'aws-s3'
 gem 'foreman'
