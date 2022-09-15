@@ -1,7 +1,0 @@
-%nav.article_listing
-  %ul
-    - @articles.each do |a|
-      %li{:class => selected_class_for(a)}
-        %a{:href => a[:slug]}
-          = a[:title]
-          %span=pretty_date a[:published]
