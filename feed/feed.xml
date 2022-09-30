@@ -3,7 +3,7 @@
 	<title>Cam Daigle</title>
 	<subtitle>Personal website of Cam Daigle</subtitle>
 	
-	<link href="https://camerondaigle.com/feed/feed.xml" rel="self"/>
+	<link href="https://camerondaigle.com/camerondaigle/feed/feed.xml" rel="self"/>
 	<link href="https://camerondaigle.com/"/>
 	<updated>2022-09-27T00:00:00Z</updated>
 	<id>https://camerondaigle.com/</id>
@@ -14,14 +14,14 @@
 	
 	<entry>
 		<title>There are three types of meetings.</title>
-		<link href="https://camerondaigle.com/posts/three-types-of-meetings/"/>
+		<link href="https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/"/>
 		<updated>2022-09-27T00:00:00Z</updated>
-		<id>https://camerondaigle.com/posts/three-types-of-meetings/</id>
+		<id>https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/</id>
 		<content type="html">&lt;p&gt;I have a system – a survival mechanism, really – for classifying, planning, and
 executing meetings in a way that helps keep me sane at work. I&#39;ve shared it with
 enough folks for whom it was also a survival mechanism that it&#39;s now a system,
 at a URL, for you.&lt;/p&gt;
-&lt;h2 id=&quot;not-more-not-less-just-better&quot; tabindex=&quot;-1&quot;&gt;Not more, not less – just better. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#not-more-not-less-just-better&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;not-more-not-less-just-better&quot; tabindex=&quot;-1&quot;&gt;Not more, not less – just better. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#not-more-not-less-just-better&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;As a warning, this isn&#39;t necessarily a path to having &lt;em&gt;fewer&lt;/em&gt; meetings. After
 all, everyone&#39;s threshold for &#39;too many meetings&#39; is different based on what
 helps them feel effective at their role, and every company&#39;s need for meetings
@@ -52,29 +52,29 @@ a bad version of itself or literally another type of meeting if it&#39;s run
 poorly. There&#39;s even an infographic at the end, if you&#39;re patient (or
 impatient and willing to scroll a lot).&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;status-meetings&quot; tabindex=&quot;-1&quot;&gt;Status Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;status-meetings&quot; tabindex=&quot;-1&quot;&gt;Status Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Let&#39;s start with what inevitably is our most common meeting type: the status
 meeting. Maybe your company has weekly readouts, or daily standups. Maybe
 there&#39;s a quarterly all-hands, or a monthly report. Most meetings, for better or
 worse, are status meetings, even when they shouldn&#39;t be (we&#39;ll get to that).&lt;/p&gt;
-&lt;h3 id=&quot;status-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;status-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The goal of a status meeting should be simply to &lt;strong&gt;disseminate information&lt;/strong&gt;.
 That&#39;s it. If the attendees of the meeting come away with current and relevant
 information about whatever the hell the meeting was intending to communicate,
 it&#39;s done its job.&lt;/p&gt;
-&lt;h3 id=&quot;status-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;status-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The scale of a status meeting can essentially be infinite. Hell, the State of
 the Union address is basically a nationwide status meeting. Go nuts, as long as
 your material is relevant to your audience. If it&#39;s not, you&#39;ve got problems.
 Let&#39;s talk about the many ways status meetings can go sideways.&lt;/p&gt;
-&lt;h3 id=&quot;status-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;status-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The power dynamic of a healthy status meeting is actually very straightforward:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The presenter has the power&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;That&#39;s it. In a morning squad standup (the most equitable status meeting), the
 person speaking is the presenter, and has the power. Even if the presenter is
 presenting to the executive team, they should &lt;em&gt;still&lt;/em&gt; have the power in the
 meeting.&lt;/p&gt;
-&lt;h3 id=&quot;status-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;status-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Status Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Because the goal of a status meeting is so simple, and the scale can be so
 large, the risks of an individual status meeting can seem relatively benign,
 especially because the bigger a meeting is, the less often it occurs (e.g. a
@@ -90,7 +90,7 @@ it were (which is likely not Professional Meeting Audience Member).&lt;/p&gt;
 huge morale drag. Sitting in a meeting hearing information that&#39;s inactionable
 doesn&#39;t help anyone feel effective except (maybe) the presenter, who themselves
 is probably not loving having to deliver readouts to an indifferent audience.&lt;/p&gt;
-&lt;h4 id=&quot;status-meetings-should-be-efficient-structured-and-read-only&quot; tabindex=&quot;-1&quot;&gt;Status meetings should be &lt;strong&gt;efficient&lt;/strong&gt;, &lt;strong&gt;structured&lt;/strong&gt;, and &lt;strong&gt;read-only&lt;/strong&gt;. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#status-meetings-should-be-efficient-structured-and-read-only&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;status-meetings-should-be-efficient-structured-and-read-only&quot; tabindex=&quot;-1&quot;&gt;Status meetings should be &lt;strong&gt;efficient&lt;/strong&gt;, &lt;strong&gt;structured&lt;/strong&gt;, and &lt;strong&gt;read-only&lt;/strong&gt;. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#status-meetings-should-be-efficient-structured-and-read-only&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;A status meeting that isn&#39;t &lt;strong&gt;efficient&lt;/strong&gt; probably just needs to be shorter –
 even if that means it happens more often. Is your Product Team Monthly a 2-hour
 slog? Maybe it could be a 1-hour slog, with more info in a followup email. Maybe
@@ -113,7 +113,7 @@ into a Surprise Feedback Meeting&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;(As you&#39;ll see, each of these meeting types can devolve into one of the others, which is kind of
 fun. I&#39;ll have a cute graphic at the end here, so you can keep reading, or just
 cheat and scroll down, I won&#39;t mind.)&lt;/p&gt;
-&lt;h2 id=&quot;feedback-meetings&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#feedback-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;feedback-meetings&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#feedback-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;You might feel like the &amp;quot;read-only&amp;quot; rule I&#39;m pushing for Status Meetings feels
 unnecessarily restrictive. What if people have things to say? What if &lt;em&gt;you&lt;/em&gt; have
 things to say? Look, I understand. You probably do have things to say. They&#39;re
@@ -121,11 +121,11 @@ probably important and awesome! But as with all awesome and important things,
 they deserve to matter. Catching a presenter off-guard mid-slide isn&#39;t going to
 be the optimal way for them to recieve your challenge, inquiry, or insight. To
 really set everyone up for productive dialogue, you need a feedback meeting.&lt;/p&gt;
-&lt;h3 id=&quot;feedback-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#feedback-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;feedback-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#feedback-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The goal of a feedback meeting is &lt;strong&gt;for a specific person or group of people to
 get the information they need about their work&lt;/strong&gt;. If the person who needs that
 information gets it, the meeting is a success.&lt;/p&gt;
-&lt;h3 id=&quot;feedback-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#feedback-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;feedback-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#feedback-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Feedback meetings are very tricky to scale – too few people and you may be
 excluding important voices in terms of expertise, perspective, or diversity, but
 too many, and people may leave feeling unheard, or the conversation may become
@@ -134,7 +134,7 @@ unwieldy.&lt;/p&gt;
 example, we have a weekly Design Crit to which all designers are invited) or
 some other easy-to-grok rationale, and then make sure the meeting presenter or
 facilitator is proactively making sure everyone is heard.&lt;/p&gt;
-&lt;h3 id=&quot;feedback-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#feedback-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;feedback-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#feedback-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;We&#39;re going to talk power dynamics before risks here, because the power dynamic in feedback meetings can be incredibly tricky. If you&#39;ve
 scaled your audience properly, everyone involved has expertise, domain
 knowledge, and input ready to deploy when the moment is right – but sometimes
@@ -159,7 +159,7 @@ again holds the power, but is now inviting feedback.&lt;/p&gt;
 tactics midstream – their challenge is to be aware of the power they hold as a
 presenter to keep the feedback meeting rewarding and relevant to the people
 providing feedback through&lt;/p&gt;
-&lt;h3 id=&quot;feedback-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#feedback-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;feedback-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Feedback Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#feedback-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Because the power imbalance and the stakes can be fairly high in a
 feedback meeting, there are many pitfalls to watch out for.&lt;/p&gt;
 &lt;p&gt;One is simply that feedback itself can spin out of control. Entire
@@ -196,23 +196,23 @@ dynamic. Keeping a feedback meeting from devolving requires the powerful voices
 in the world to stay aware of the power they wield when they speak up, and
 requires them to make sure the presenter feels &lt;em&gt;safe&lt;/em&gt; to simply &lt;em&gt;receive&lt;/em&gt; even
 the most incisive, earthshaking feedback.&lt;/p&gt;
-&lt;h2 id=&quot;decision-meetings&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;decision-meetings&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Much like the Status Meeting might feel restrictive to the person looking to have
 their voice heard in a meeting, the Feedback Meeting might feel like it&#39;s
 limiting your ability to Actually Do Something. So let&#39;s talk about Decision
 Meetings, which exist specifically to fill that need.&lt;/p&gt;
-&lt;h3 id=&quot;decision-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;decision-meetings-the-goal&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Goal &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings-the-goal&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The goal of a decision meeting is to &lt;strong&gt;present one or more problems and make a
 decision about them&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Sounds easy, but it&#39;s not, especially since people don&#39;t often identify decision
 meetings very well! In my experience these meetings are the rarest in terms of
 quantity, for two main reasons:&lt;/p&gt;
-&lt;h4 id=&quot;decisions-often-don-t-get-their-own-meetings&quot; tabindex=&quot;-1&quot;&gt;Decisions often don&#39;t get their own meetings. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decisions-often-don-t-get-their-own-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;decisions-often-don-t-get-their-own-meetings&quot; tabindex=&quot;-1&quot;&gt;Decisions often don&#39;t get their own meetings. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decisions-often-don-t-get-their-own-meetings&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;In their absence, decisions tend to get made through less-healthy means – like
 somewhere inside a chaotic Feedback Meeting, or silently by someone just making
 a call so they can keep moving, or in a 1:1 between two people that are tired of
 waiting.&lt;/p&gt;
-&lt;h4 id=&quot;decision-meetings-are-often-misidentified&quot; tabindex=&quot;-1&quot;&gt;Decision meetings are often misidentified. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings-are-often-misidentified&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;decision-meetings-are-often-misidentified&quot; tabindex=&quot;-1&quot;&gt;Decision meetings are often misidentified. &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings-are-often-misidentified&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;Here are some examples of meetings that are actually decision meetings:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Your team gets together Monday to make sure everyone has work to do that week.
@@ -223,7 +223,7 @@ a decision meeting. Actually most planning meetings are decision meetings.&lt;/l
 &lt;li&gt;Your team has a monthly backlog grooming session. Yep, that&#39;s decision time,
 baby.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;decision-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;decision-meetings-the-scale&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Scale &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings-the-scale&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Decision meetings should be your smallest type of meeting. Everyone should be a
 stakeholder and participant in the work being done, and should take an
 active role in the process of producing said decision(s).&lt;/p&gt;
@@ -231,7 +231,7 @@ active role in the process of producing said decision(s).&lt;/p&gt;
 messages later. If it&#39;s too big, you&#39;re risking folks not feeling like their
 voice is heard, or simply giving them more meeting fatigue when they could be
 doing something else.&lt;/p&gt;
-&lt;h3 id=&quot;decision-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;decision-meetings-the-power-dynamic&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: The Power Dynamic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings-the-power-dynamic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Decision meetings are one place where the existing power dynamic is actually a
 key aspect of the meeting&#39;s success rather than something that you need to watch
 out for.&lt;/p&gt;
@@ -245,7 +245,7 @@ means the most powerful person in the room is responsible – for taking notes,
 facilitating discussion, including everyone&#39;s voice, and producing not only the
 decision, but notes &amp;amp; information that contextualize it for anyone that needs
 the paper trail later.&lt;/p&gt;
-&lt;h3 id=&quot;decision-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#decision-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;decision-meetings-devolution&quot; tabindex=&quot;-1&quot;&gt;Decision Meetings: Devolution &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#decision-meetings-devolution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Here&#39;s your devolution point, bringing us full circle to the top.&lt;/p&gt;
 &lt;p&gt;Did you just get out of a meeting where the team had a conflict or issue but no decision
 was made? You were probable subject to a Pretty Terrible Status Meeting. Or,
@@ -254,11 +254,11 @@ which case that person probably has a sour taste in their mouth from having to
 experience a Stressful Feedback Meeting.&lt;/p&gt;
 &lt;p&gt;Either way, you sure as hell didn&#39;t get a decision made that helps the team feel
 satisfied, empowered, and focused.&lt;/p&gt;
-&lt;h2 id=&quot;i-promised-you-an-infographic&quot; tabindex=&quot;-1&quot;&gt;I Promised You An Infographic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#i-promised-you-an-infographic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;i-promised-you-an-infographic&quot; tabindex=&quot;-1&quot;&gt;I Promised You An Infographic &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#i-promised-you-an-infographic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Here ya go. It really all boils down to this:&lt;/p&gt;
 &lt;p&gt;&lt;img class=&quot;img-block&quot; src=&quot;https://camerondaigle.com/img/3-meeting-type-triangle.svg&quot; alt=&quot;Visualization of 3
 meeting types&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;okay-what-now&quot; tabindex=&quot;-1&quot;&gt;Okay, What Now? &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/posts/three-types-of-meetings/#okay-what-now&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;okay-what-now&quot; tabindex=&quot;-1&quot;&gt;Okay, What Now? &lt;a class=&quot;direct-link&quot; href=&quot;https://camerondaigle.com/camerondaigle/posts/three-types-of-meetings/#okay-what-now&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I hope this system is as helpful for you as it has been for me! If you&#39;re interested in
 a more expanded, &lt;em&gt;presentational&lt;/em&gt; form of this info, say a call or workshop, &lt;a href=&quot;mailto:me@camerondaigle.com&quot;&gt;email me&lt;/a&gt; and we can chat.&lt;/p&gt;
 &lt;p&gt;In the meantime, hey, these are my ideas i shared with you – if you found them helpful
