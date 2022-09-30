@@ -318,7 +318,7 @@ satisfied, empowered, and focused.
 
 Here ya go. It really all boils down to this:
 
-<img class="img-block" src="{{ '/img/3-meeting-type-triangle.svg' }}" alt="Visualization of 3
+<img class="img-block" src="{{ '/img/3-meeting-type-triangle.svg' | url }}" alt="Visualization of 3
 meeting types" />
 
 ## Okay, What Now?
