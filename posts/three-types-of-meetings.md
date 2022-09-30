@@ -1,6 +1,7 @@
 ---
 title: There are three types of meetings.
-description: This is a post on My Blog about agile frameworks.
+description: I have a system – a survival mechanism, really – for classifying, planning, and
+executing meetings in a way that helps keep me sane at work.
 date: 2022-09-27
 layout: layouts/post.njk
 ---
@@ -10,24 +11,33 @@ executing meetings in a way that helps keep me sane at work. I've shared it with
 enough folks for whom it was also a survival mechanism that it's now a system,
 at a URL, for you.
 
-## Not more, not less – just better.
+### You can't solve meetings by just adding or subtracting them.
 
-As a warning, this isn't necessarily a path to having _fewer_ meetings. After
+Managers generally feel more effective when they're communicating directly with
+people, which means they tend to be fans of meetings, so they try to solve issues
+with meetings through _other_ meetings.
+
+Individual contributors, however, generally feel more
+effective when they're plying their trade. So they tend to feel pulled away from
+their 'real work' when they have to attend meetings, and so they try to solve issues
+with meetings by cutting down on meetings, or just checking out while in meetings.
+
+### Not more, not less – just better.
+
+As a warning, this system isn't necessarily a path to having _fewer_ meetings. After
 all, everyone's threshold for 'too many meetings' is different based on what
 helps them feel effective at their role, and every company's need for meetings
-is dependent upon the work they're trying to accomplish. Managers generally feel
-more effective when they're communicating directly with people, which means
-they're generally fans of meetings. Individual contributors generally feel more
-effective when they're plying their trade, so they tend to feel pulled away from
-their 'real work' when they have to attend meetings.
+is dependent upon the work they're trying to accomplish.
 
-There's even a possibility that when you work through this system, you end up
-with _more_ meetings, because you have one monstrous, all-encompassing meeting
+There's even a possibility that once you've worked through this system, you end up
+with _more_ meetings, because you've realized you need to break apart one monstrous, all-encompassing meeting
 that's trying to do too many things.
 
 I'm hoping this system helps you have _better_ meetings – that the people
 running the meeting feel like it's worth their time to run them, and that the
 people in attendance feel like their presence there _matters_.
+
+### Three types, no more, no less.
 
 So let's get into it: try thinking of all meetings as either **Status**
 meetings, **Feedback** meetings, or **Decision** meetings.
@@ -35,13 +45,14 @@ meetings, **Feedback** meetings, or **Decision** meetings.
 We'll talk about 4 aspects of each meeting type:
 
 - **The goal.** Having a clear idea of what each meeting type is trying to
-  accomplish is the first and best way for us to know when it's missing the mark.
+  accomplish is the first and best way for us to know when it's a Good Meeting.
+  (Yes, meetings can be Good!)
 - **The scale.** All meetings don't work for all audience sizes – having an
   understanding of scale will help you know who to invite to what.
 - **The power dynamic.** There is _always_ a power dynamic at play in any
   meeting; you need to understand what it is in order for it to be constructive
   instead of destructive to the execution of the meeting.
-- **The risks.** As you'll soon see, each of these meeting types devolves into either
+- **The risks.** As you'll soon see, each of these meeting types can devolve into either
   a bad version of itself or literally another type of meeting if it's run
   poorly. There's even an infographic at the end, if you're patient (or
   impatient and willing to scroll a lot).
@@ -64,8 +75,8 @@ it's done its job.
 
 The scale of a status meeting can essentially be infinite. Hell, the State of
 the Union address is basically a nationwide status meeting. Go nuts, as long as
-your material is relevant to your audience. If it's not, you've got problems.
-Let's talk about the many ways status meetings can go sideways.
+your material is relevant to your audience. If it's not, you're just wasting
+valuable audience (and presenter) time and energy.
 
 ### Status Meetings: The Power Dynamic
 
@@ -86,24 +97,21 @@ especially because the bigger a meeting is, the less often it occurs (e.g. a
 quarterly all-hands can be pretty boring, but at least it's only boring 4 times a year).
 
 But the erosion of morale from bad status meetings doesn't happen because _one_
-of them is bad, it happens because _lots_ of them are bad. When people feel like
-they're drowning in meetings, it's likely because they're having to navigate too
-many status meetings – they're either feeling overwhelmed with information, or
-they're feeling overwhelmed with _boredom_ as they wait their way through
-readouts of information that is redundant or irrelevant to their "real job", as
-it were (which is likely not Professional Meeting Audience Member).
+of them is bad, it happens because _many_ of them are bad.
 
-Status meetings, especially lots of redundant/boring status meetings, can be a
-huge morale drag. Sitting in a meeting hearing information that's inactionable
-doesn't help anyone feel effective except (maybe) the presenter, who themselves
-is probably not loving having to deliver readouts to an indifferent audience.
+Often when people feel like they're drowning in meetings, it's because they're
+having to navigate too many status meetings – meetings where they're just in the audience
+audience, just listening, just waiting to get back to their "real work" as it
+were. Or they're having to present, which can be equally draining – reading out
+information, likely over and over, as the audience or the information changes
+slightly from meeting to meeting.
 
 #### Status meetings should be **efficient**, **structured**, and **read-only**.
 
 A status meeting that isn't **efficient** probably just needs to be shorter –
-even if that means it happens more often. Is your Product Team Monthly a 2-hour
-slog? Maybe it could be a 1-hour slog, with more info in a followup email. Maybe
-it could be a trim 30 minutes biweekly.
+even if that means it happens more often. Is your Product Team Monthly a two-hour
+slog? Maybe it could be a sprightly _one_-hour slog, with more info in a followup document. Maybe
+it could be a trim 30 minutes biweekly. Hell, maybe it could be an email.
 
 A status meeting that isn't **structured** is probably inefficient. Different
 ceremonies for different types of status meetings can really help – make sure
@@ -157,8 +165,7 @@ facilitator is proactively making sure everyone is heard.
 
 ### Feedback Meetings: The Power Dynamic
 
-We're going to talk power dynamics before risks here, because the power dynamic in feedback meetings can be incredibly tricky. If you've
-scaled your audience properly, everyone involved has expertise, domain
+If you've scaled your audience properly, everyone involved has expertise, domain
 knowledge, and input ready to deploy when the moment is right – but sometimes
 you're just presenting to management or leadership.
 
@@ -169,24 +176,26 @@ even be _called_ a Monthly Status Meeting, but it's likely not a Status Meeting 
 system, because you often get _feedback_ in the form of inquiries,
 approval/disapproval, or simply gut reactions to the work you're presenting.
 
-This type of dynamic is most at risk of devolution: you may feel compelled to
-act directly on feedback from a superior mid-meeting, especially if said superior
-isn't aware of the power they hold and are quick to provide gut reactions that
-cause you worry or anxiety.
-
-At a smaller scale, this could even happen with, say, a designer presenting
-their designs to their peers – if one of those peers holds more sway due to
-status, seniority, or even just privilege, the presenter may have to really
-fight the temptation to devolve the meeting.
+This dynamic exists even at smaller scales. For example, imagine a designer
+simply presenting their designs to other designers on the team in a weekly
+critique call. If one of those colleagues holds more sway due to status,
+seniority, or even just privilege, the presenter may have to really fight the
+temptation to devolve the meeting into a Decision Meeting (which we'll examine
+in the next section).
 
 Conversely, let's picture a situation where your company made a structural
 change and is now hosting a Q&A session about it. In that case, the leadership
 again holds the power, but is now inviting feedback.
 
-At least in my experience, company leadership isn't that likely to switch
-tactics midstream – their challenge is to be aware of the power they hold as a
-presenter to keep the feedback meeting rewarding and relevant to the people
-providing feedback through 
+Power tends to be empowered by the status quo, so company leadership isn't that
+likely to switch tactics midstream – they're probably not at risk of suddenly
+devolving the meeting in the same way. Their challenge is instead to be aware of the power
+they hold as a presenter and focus on making the feedback meeting rewarding and
+relevant to the people providing that feedback.
+
+For example, this might look like _not_ trying to respond to feedback in the
+moment, but instead listening to the feedback, taking notes, and providing
+considered answers in a followup readout (a status meeting!) or written recap.
 
 ### Feedback Meetings: Devolution
 
@@ -199,7 +208,7 @@ compose, deliver, and recieve contructive feedback; I can't do that here, this
 page is long enough as it is. In this context, let's instead
 focus on the meeting itself and two big risks you need to navigate:
 
-**Respect the boundaries set up by the presenter.**
+**Make and keep strong boundaries as a presenter.**
 
 The presenter simply needs to collect relevant information so they
 can step away after the meeting, weigh and consider it, and move forward from there. It's in their
@@ -208,8 +217,8 @@ possible.
 
 For example, instead of a generic 'what do you think?', they could be open about being unsure
 about their wording choice, or their color choice, or whether the overall
-structure of their work makes sense. Whatever they specify, it should be
-respected by the folks providing that feedback.
+structure of their work makes sense. Clear boundaries help the audience know
+what to focus on and understand what's in play for discussion.
 
 Here's the second risk, which I think is the most crucial:
 
@@ -233,7 +242,7 @@ Decision Meeting.**
 
 This devolution is often unintentional and the result of an unrecognized power
 dynamic. Keeping a feedback meeting from devolving requires the powerful voices
-in the world to stay aware of the power they wield when they speak up, and
+in the room to stay aware of the power they wield when they speak up, and
 requires them to make sure the presenter feels _safe_ to simply _receive_ even
 the most incisive, earthshaking feedback.
 
@@ -295,7 +304,7 @@ senior represenative, or manager, or director, not simply the loudest person or
 the one who's been around the longest.)
 
 I simply mean that someone needs to be **accountable** for the decision that's
-being made. In a company dynamic with healthy roles and responsibilI Read About How There Are 3 Meeting Typesities, that
+being made. In a company dynamic with healthy roles and responsibilities, that
 means the most powerful person in the room is responsible – for taking notes,
 facilitating discussion, including everyone's voice, and producing not only the
 decision, but notes & information that contextualize it for anyone that needs
@@ -303,15 +312,20 @@ the paper trail later.
 
 ### Decision Meetings: Devolution
 
-Here's your devolution point, bringing us full circle to the top.
+Here's your devolution point, which points us right back to our first meeting
+type:  If your decision meeting ends without a decision, congrats, you've just
+experienced an Unsatisfying Status Meeting.
 
-Did you just get out of a meeting where the team had a conflict or issue but no decision
-was made? You were probable subject to a Pretty Terrible Status Meeting. Or,
-maybe someone took notes and is going to adjust something, in
-which case that person probably has a sour taste in their mouth from having to
-experience a Stressful Feedback Meeting.
+Decision meetings may be the rarest type of _explicitly_ defined meetings, but
+"syncs" or "alignment" meetings (decision meetings) that don't reach a decision
+point (bad status meetings) are probably the _most_ common meeting to glut your
+calendar, and wear you out.
 
-Either way, you sure as hell didn't get a decision made that helps the team feel
+It's also possible that, while a decision wasn't made, someone gave some
+feedback that led someone else to go back and adjust something afterward, which
+means they were just subject to a Stressful Feedback Meeting. But even in this
+case where the meeting _did_ affect some amount of change, you sure as hell
+didn't get a _decision made together_ in a way that helps the team feel
 satisfied, empowered, and focused.
 
 ## I Promised You An Infographic
@@ -323,8 +337,10 @@ meeting types" />
 
 ## Okay, What Now?
 
-I hope this system is as helpful for you as it has been for me! If you're interested in
-a more expanded, _presentational_ form of this info, say a call or workshop, <a href="mailto:me@camerondaigle.com">email me</a> and we can chat.
+I hope this system is as helpful for you as it has been for me! If you're
+interested in a more expanded, _presentational_ form of this info, say via a
+call or workshop, <a href="mailto:me@camerondaigle.com">email me</a> and we can
+chat.
 
 In the meantime, hey, these are my ideas i shared with you – if you found them helpful
 and might even use them to appear a More Qualified Professional in a way
