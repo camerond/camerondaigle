@@ -1,7 +1,6 @@
 ---
 title: There are three types of meetings.
-description: I have a system – a survival mechanism, really – for classifying, planning, and
-executing meetings in a way that helps keep me sane at work.
+description: I have a system – a survival mechanism, really – for classifying, planning, and executing meetings in a way that helps keep me sane at work.
 date: 2022-09-27
 layout: layouts/post.njk
 ---
