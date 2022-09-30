@@ -66,7 +66,7 @@ worse, are Status Meetings, even when they shouldn't be (we'll get to that).
 
 ### Status Meetings: The Goal
 
-The goal of a Status Meeting should be simply to **disseminate information**.
+The goal of a Status Meeting should be to **disseminate information**.
 That's it. If the attendees of the meeting come away with current and relevant
 information about whatever the hell the meeting was intending to communicate,
 it's done its job.
@@ -193,18 +193,18 @@ there to provide feedback, but around a decision that is likely already made.
 Because the power imbalance and the stakes can be fairly high in a
 feedback meeting, there are many pitfalls to watch out for.
 
-One is simply that feedback itself can spin out of control. Entire
-other articles and columns and books have been written just about how to
-compose, deliver, and recieve contructive feedback; I can't do that here (this
-article is long enough as it is). In this context, let's instead
-focus on the meeting itself and two big risks you need to navigate.
+One major risk is that the feedback itself can spin out of control. Entire other
+articles and columns and books have been written just about how to compose,
+deliver, and recieve contructive feedback; I can't do that topic justice here
+(this article is long enough as it is). In this context, let's instead focus on
+the meeting itself and two big risks you need to navigate.
 
 **Make and keep strong boundaries as a presenter.**
 
-The presenter simply needs to collect relevant information so they can step away
-after the meeting, weigh and consider it, and move forward from there. It's in
-their best interest to define the playing field for that information as clearly
-as possible.
+Think again about the goal of the meeting: the presenter needs to collect
+relevant information so they can step away after the meeting, weigh and consider
+it, and move forward from there. It's in their best interest to define the
+playing field for that information as clearly as possible.
 
 For example, instead of a generic 'what do you think?', they could be open about being unsure
 about their wording choice, their color choice, or whether the overall
@@ -280,8 +280,7 @@ active role in the process of producing said decision(s).
 
 If the meeting is too small, you're risking "why wasn't I consulted"-type
 messages later. If it's too big, you're risking folks not feeling like their
-voice is heard, or simply giving them more meeting fatigue when they could be
-doing something else.
+voice is heard, giving them meeting fatigue when they could be doing something else.
 
 ### Decision Meetings: The Power Dynamic
 
@@ -291,15 +290,15 @@ out for.
 
 (To be clear, when I say "power" here, I specifically mean power in terms of
 professional role definition, not forms of privilege that exhibit as power. The
-senior representative, manager, or director – not simply the loudest person or
+senior representative, manager, or director – not just the loudest person or
 the one who's been around the longest.)
 
-I simply mean that someone needs to be **accountable** for the decision that's
+Someone needs to be **accountable** for the decision that's
 being made. In a company dynamic with well-defined roles and responsibilities, that
 means the most powerful person in the room is responsible – for taking notes,
-facilitating discussion, including everyone's voice, and producing **artifacts
-of the decision**. Maybe there are next steps, maybe there are action items,
-maybe there's simply a record of the decision: the key is that something has
+facilitating discussion, including everyone's voice, and producing **recorded artifacts
+of the decision**. This could take the form of next steps, action items,
+or just a record of the decision: the key is that something has
 been produced that is clear and well-communicated to anyone who needs it.
 
 ### Decision Meetings: Devolution
