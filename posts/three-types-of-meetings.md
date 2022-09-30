@@ -32,16 +32,19 @@ people in attendance feel like their presence there _matters_.
 So let's get into it: try thinking of all meetings as either **Status**
 meetings, **Feedback** meetings, or **Decision** meetings.
 
-We'll talk about these meetings in 4 aspects:
+We'll talk about 4 aspects of each meeting type:
 
-- **The goal.** What is this meeting type trying to accomplish?
-- **The risks.** As you'll see, each of these meeting types devolves into either
-  a bad version of itself or literally another type of meeting if it's run poorly.
-- **The power dynamic.** There is _always_ a power dynamic at play in any
-  meeting; you need to understand what it is in order for it to factor into
-  helping a meeting be productive instead of destructive.
-- **The scale.** Finally, all meetings don't work for all audience sizes – having an
+- **The goal.** Having a clear idea of what each meeting type is trying to
+  accomplish is the first and best way for us to know when it's missing the mark.
+- **The scale.** All meetings don't work for all audience sizes – having an
   understanding of scale will help you know who to invite to what.
+- **The power dynamic.** There is _always_ a power dynamic at play in any
+  meeting; you need to understand what it is in order for it to be constructive
+  instead of destructive to the execution of the meeting.
+- **The risks.** As you'll soon see, each of these meeting types devolves into either
+  a bad version of itself or literally another type of meeting if it's run
+  poorly. There's even an infographic at the end, if you're patient (or
+  impatient and willing to scroll a lot).
 
 ## Status Meetings
 

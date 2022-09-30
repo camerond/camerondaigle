@@ -97,23 +97,32 @@ h1 a:hover {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.8em;
 }
 
 h2 {
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 p, ul {
   margin: 1.5em 0;
+}
+
+ul {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+li {
+  margin: 0.8em 0;
 }
 
 .wrapper {
@@ -131,6 +140,7 @@ header h1 {
 footer {
   font-size: 0.8em;
   margin: 8em 0;
+  text-align: center;
 }
 
 img.img-block {
@@ -139,9 +149,13 @@ img.img-block {
   height: auto;
 }
 
+.tmpl-home ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .tmpl-home li {
   list-style-type: none;
-  margin: 0.8em 0;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -181,6 +195,11 @@ img.img-block {
   color: var(--highlight-color);
   border-color: var(--highlight-hover-color);
   animation: glow 1s infinite ease-in-out;
+}
+
+.go-back {
+  text-align: center;
+  margin: 12rem 0;
 }
 
 @keyframes glow {
