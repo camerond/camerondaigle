@@ -91,20 +91,26 @@ meeting.
 
 ### Status Meetings: Devolution
 
-Because the goal of a Status Meeting is so simple, and the scale can be so
-large, the risks of an individual Status Meeting can seem relatively benign,
-especially because the bigger a meeting is, the less often it occurs (e.g. a
-quarterly all-hands can be pretty boring, but at least it's only boring 4 times a year).
+Because the goal of a Status Meeting is so simple – and the scale can be so
+large – the risks of a lousy Status Meeting can seem relatively benign. After
+all, the bigger a meeting is, the less often it generally occurs. Nobody's going
+to be super torn up about the occasional less-than-invigorating daily standup,
+and even if a quarterly all-hands can be pretty boring, at least it's only boring 4
+times a year.
 
 But the erosion of morale from bad Status Meetings doesn't happen because _one_
-of them is bad, it happens because _many_ of them are bad.
+of them is bad – it happens because _many_ of them are bad. This is the most
+common meeting type that people attempt to fix with more of them: the quarterly
+status meeting didn't explain goals well enough? Maybe what teams need is a
+monthly department status meeting. Maybe your squad also needs a biweekly _squad_
+status meeting. Next thing you know, your organization is drowning in status meetings.
 
-Often when people feel like they're drowning in meetings, it's because they're
-having to navigate too many Status Meetings – meetings where they're just in the
-audience, just listening and waiting to get back to their "real work" as it
-were. Or they're having to present (which can be equally draining) – reading out
-information, likely over and over, as the audience or the information changes
-slightly from meeting to meeting.
+Often when people feel like they have 'too many meetings', it's because they're
+having to navigate too many Status Meetings, specifically: maybe they're in the
+audience, listening and waiting to get back to their "real work" as it were. Or
+they're having to prepare and deliver presentations (which can be equally
+draining) – reading out information, likely over and over, as the audience or
+the information changes slightly from meeting to meeting.
 
 #### Status Meetings should be **efficient**, **structured**, and **read-only**.
 
