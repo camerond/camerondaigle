@@ -2,9 +2,9 @@
   "title": "Cam Daigle",
   "url": "https://camerondaigle.com/",
   "language": "en",
-  "description": "Personal website of Cam Daigle",
+  "description": "Personal website of Cam Daigle, a designer, musician and artist living in Chicago.",
   "feed": {
-    "subtitle": "Personal website of Cam Daigle",
+    "subtitle": "Personal website of Cam Daigle, a designer, musician and artist living in Chicago.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://camerondaigle.com/"
