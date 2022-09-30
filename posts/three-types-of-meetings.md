@@ -36,12 +36,12 @@ I'm hoping this system helps you have _better_ meetings – that the people
 running the meeting feel like it's worth their time to run them, and that the
 people in attendance feel like their presence there _matters_.
 
-### Three types, no more, no less.
+### Here's the system.
 
-So let's get into it: try thinking of all meetings as either **Status**
+I believe all meetings can either be defined as either **Status**
 meetings, **Feedback** meetings, or **Decision** meetings.
 
-We'll talk about 4 aspects of each meeting type:
+As I explain each type, I'll talk about them via 4 aspects:
 
 - **The goal.** Having a clear idea of what each meeting type is trying to
   accomplish is the first and best way for us to know when it's a Good Meeting.
@@ -58,7 +58,7 @@ We'll talk about 4 aspects of each meeting type:
 
 ## Status Meetings
 
-Let's start with what inevitably is our most common meeting type: the status
+Let's start with what the most common meeting type on most peoples' calendar: the status
 meeting. Maybe your company has weekly readouts, or daily standups. Maybe
 there's a quarterly all-hands, or a monthly report. Most meetings, for better or
 worse, are status meetings, even when they shouldn't be (we'll get to that).
