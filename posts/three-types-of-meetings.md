@@ -342,8 +342,8 @@ meeting types" />
 ## Okay, What Now?
 
 I hope this system is as helpful for you as it has been for me! If you're
-interested in a more expanded, _presentational_ form of this info, <a
-href="mailto:me@camerondaigle.com">email me</a> and we can chat.
+interested in a more expanded, _presentational_ form of this info, 
+contact me – me @ camdaigle dot com – and we can chat.
 
 I would also love to hear any tales of this system working well for you, 
 questions you have about the system, or even ways it backfired on you, so I can
