@@ -342,9 +342,8 @@ meeting types" />
 ## Okay, What Now?
 
 I hope this system is as helpful for you as it has been for me! If you're
-interested in a more expanded, _presentational_ form of this info, say via a
-call or workshop, <a href="mailto:me@camerondaigle.com">email me</a> and we can
-chat.
+interested in a more expanded, _presentational_ form of this info, <a
+href="mailto:me@camerondaigle.com">email me</a> and we can chat.
 
 I would also love to hear any tales of this system working well for you, 
 questions you have about the system, or even ways it backfired on you, so I can
@@ -353,9 +352,8 @@ keep polishing this page. Email me those too!
 And hey, we're here at the bottom of this long page together, so one last thing,
 between friends, which we now clearly are:
 
-Meetings cost money; better meetings
-save money. If you found the ideas I've laid out
-here helpful, and might even use them to appear a More Qualified
+Meetings cost money; better meetings save money. If you found the ideas I've
+laid out here helpful, and might even use them to appear a More Qualified
 Professional in a way that profits you or your business, I'd really appreciate
 if you threw some cash my way: 
 
