@@ -219,10 +219,10 @@ what to focus on and understand what's in play for discussion.
 
 Here's the second risk, which I think is the most crucial:
 
-**Don't make any decisions.**
+**Be extremely careful about decisionmaking.**
 
 The moment the presenter stops _recieving_ feedback and starts _reacting_ to it,
-you're in trouble.
+the meeting dynamic is at risk.
 
 In my world (product design), this looks like a product designer suddenly
 whipping open Figma and doing a little "how about now?" dance mid-meeting.  Even
@@ -234,12 +234,19 @@ Dialogue is fine! Conversations are great. Feedback should be recieved, recorded
 and followed up on. But once you start _deciding_ things – whether you're moving
 a mockup around, just tweaking a document, or responding to your reports by
 re-justifying why an organizational change is already set in stone, you're
-making decisions on the fly at the expense of validating the feedback you're
-recieving. You've now **devolved** your feedback meeting into a **Surprise
-Ad-hoc Decision Meeting.** This devolution is often unintentional and tends to
-be exacerbated by an _unrecognized power dynamic_.
+making decisions on the fly, potentially at the expense of validating other
+feedback you're recieving. You've now likely **devolved** your feedback meeting into a
+**Surprise Ad-hoc Decision Meeting.** This devolution is often unintentional and
+tends to be exacerbated by an _unrecognized power dynamic_.
 
-(I have a feeling this section alone might need its own article.)
+Note that, like any <a href="https://cuberule.com/" target="_blank">cleverly
+reductive taxonomical system</a>, these aren't dogmatic guides. It's not Against
+The Rules to make decisions in a feedback meeting; if you're showing work to your boss,
+they may provide on-the-spot _direction_ about where to go next. That kind of
+decision _can_ be clarifying and empowering! It's just incredibly important that
+they and you are both clear that they're providing a decision in that moment. If
+you're moving outside the realm of _feedback_ and into the realm of a
+_decision_, everyone involved needs to know that shift is taking place.
 
 Okay, it's time for our last (and rarest) meeting type.
 
