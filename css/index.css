@@ -132,9 +132,10 @@ li {
 }
 
 header h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   color: var(--secondary-color);
   font-weight: 200;
+  margin-top: 1em;
 }
 
 footer {
@@ -160,11 +161,15 @@ img.img-block {
 
 @media only screen and (min-width: 1500px) {
   header h1 {
-    font-size: 12rem;
+    font-size: 9rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 10vw;
+  }
+
   h1 {
     font-size: 2.2em;
   }
