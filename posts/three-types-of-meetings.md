@@ -54,7 +54,7 @@ As I explain each type, I'll talk about them via 4 aspects:
   instead of destructive to the execution of the meeting.
 - **The risks.** As you'll soon see, each of these meeting types can literally devolve into 
   an unproductive version of __another__ type of meeting if it's run
-  poorly. I event whipped up an infographic at the end to illustrate this, if you're patient (or
+  poorly. I even whipped up an infographic at the end to illustrate this, if you're patient (or
   impatient and willing to scroll a lot).
 
 ## Status Meetings
