@@ -149,7 +149,7 @@ unnecessarily restrictive. What if people have things to say? What if _you_ have
 things to say? Look, I understand. You probably do have things to say. They're
 probably important and awesome! But as with all awesome and important things,
 they deserve to matter. Catching a presenter off-guard mid-slide isn't going to
-be the optimal way for them to recieve your challenge, inquiry, or insight. To
+be the optimal way for them to receive your challenge, inquiry, or insight. To
 really set everyone up for productive dialogue, you need a Feedback Meeting.
 
 ### Feedback Meetings: The Goal
@@ -201,7 +201,7 @@ feedback meeting, there are many pitfalls to watch out for.
 
 One major risk is that the feedback itself can spin out of control. Entire other
 articles and columns and books have been written just about how to compose,
-deliver, and recieve contructive feedback; I can't do that topic justice here
+deliver, and receive contructive feedback; I can't do that topic justice here
 (this article is long enough as it is). In this context, let's instead focus on
 the meeting itself and two big risks you need to navigate.
 
@@ -221,7 +221,7 @@ Here's the second risk, which I think is the most crucial:
 
 **Be extremely careful about decisionmaking.**
 
-The moment the presenter stops _recieving_ feedback and starts _reacting_ to it,
+The moment the presenter stops _receiving_ feedback and starts _reacting_ to it,
 the meeting dynamic is at risk.
 
 In my world (product design), this looks like a product designer suddenly
@@ -235,7 +235,7 @@ and followed up on. But once you start _deciding_ things – whether you're movi
 a mockup around, just tweaking a document, or responding to your reports by
 re-justifying why an organizational change is already set in stone, you're
 making decisions on the fly, potentially at the expense of validating other
-feedback you're recieving. You've now likely **devolved** your feedback meeting into a
+feedback you're receiving. You've now likely **devolved** your feedback meeting into a
 **Surprise Ad-hoc Decision Meeting.** This devolution is often unintentional and
 tends to be exacerbated by an _unrecognized power dynamic_.
 
