@@ -230,7 +230,7 @@ if that designer is _awesome_ and the feedback they're getting is _perfect_,
 now everyone else is having to wait their turn as pixels get pushed around – a
 literal case of design by committee.
 
-Dialogue is fine! Conversations are great. Feedback should be recieved, recorded
+Dialogue is fine! Conversations are great. Feedback should be received, recorded
 and followed up on. But once you start _deciding_ things – whether you're moving
 a mockup around, just tweaking a document, or responding to your reports by
 re-justifying why an organizational change is already set in stone, you're
