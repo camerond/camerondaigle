@@ -168,7 +168,7 @@ unwieldy.
 It can be a good idea to scope a Feedback Meeting's invite list to be an entire team – for
 example, we have a weekly Design Crit to which all designers are invited – or
 around some other easy-to-grok rationale. Then, once the meeting's rolling, it's
-impertive that the presenter (or facilitator) is proactively making sure
+imperative that the presenter (or facilitator) is proactively making sure
 everyone is heard and is given a chance to meaningfully contribute.
 
 ### Feedback Meetings: The Power Dynamic
