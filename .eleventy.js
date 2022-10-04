@@ -20,6 +20,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
 
+  // https://bnijenhuis.nl/notes/2021-04-23-cache-busting-in-eleventy/
+  eleventyConfig.addFilter("bust", (url) => {
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    const relativeUrl = (urlPart.charAt(0) == "/") ? urlPart.substring(1): urlPart;
+
+    try {
+        const fileStats = fs.statSync(relativeUrl);
+        const dateTimeModified = new DateTime(fileStats.mtime).toFormat("X");
+        params.set("v", dateTimeModified);
+    } catch (error) { }
+        
+    return `${urlPart}?${params}`;
+  });
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
