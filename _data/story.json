@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Design Lead, Trust & Safety Team",
+    "logo": "reverbtrust",
+    "content": [
+      "Reverb has made a name for itself over the years as not only the best but safest place to buy music gear. However, as with any large-scale online marketplace, spam & fraud eventually became an issue worthy of its own dedicated product team.",
+      "In 2024, I led design on our Spam & Fraud initiative. I proposed & then worked with our data analysts & engineers to implement a brand-new KPI to guide our work, and worked with our Engineering & Product leads to craft our overall roadmap.",
+      "I also led a comprehensive rebranding effort – any moment a Reverb user engages with our Trust features (e.g. flagging a message) became an opportunity to build their trust in the platform by teaching them about our Trust team.",
+      "Trust & safety work is many-pronged: some solutions can prevent bad behavior entirely, while others can disincentivize, mitigate, or simply empower the recipient to take action against spam. During my time with Trust & Safety, I contributed to all of those levels, from strategic decisionmaking to on-the-ground UI work, and we ended up drastically reducing spam, beating our KPI goal by more than double."
+    ]
+  },
+  {
+    "title": "Manager, Cadence Design System",
+    "logo": "cadence",
+    "content": [
+      "Throughout Reverb’s rapid period of growth, I had worked to manage & streamline our styles & UI components in order to keep pace with our need for rapid iteration & experimentation. In 2023, we formalized that concern into the Cadence Design System.",
+      "I founded the Design System team, and created a new role & advancement ladder for our key ICs under this mantle (we called the new role “Design Technologist”; other companies may call this a Design Engineer or UX Engineer). I managed the ICs on the team, established our team’s principles & work process, and handled project management along with advocacy to the wider organization.",
+      "At the time of my departure, Cadence was comprised of over 5 dozen accessible, documented, responsive components, powering the majority of Reverb’s buyer & seller flows. We also built a cross-platform token system that kept colors, sizes, typography and more in sync between Figma & our product.",
+      "Thanks to Cadence, we were able to deliver a comprehensive look & feel update this year, as well as dark mode support – and product teams organization-wide were able to deliver faster, more easily, and at a higher quality than before."
+    ]
+  },
+  {
+    "title": "Lead Product Designer, Reverb Buyer Team",
+    "logo": "reverb",
+    "content": [
+      "Reverb was purchased by Etsy in 2019, and I led design for our buyer-side experience throughout that transition. I hired & managed designers, worked with product & engineering leads to establish our overall strategy, and worked with teams on user problem definition, research, and analysis.",
+      "Under Etsy, Reverb pivoted to an experimentation-driven process – product changes always took the form of A/B tests, and were measured by their overall impact on purchase conversion. To that end, I established our experimentation template & best practices around hypothesis & user problem definition.",
+      "Many of the improvements from this era – standardizing our rows & grids, systematizing our callouts & nudges, and more – form the foundation of Reverb as it exists today."
+    ]
+  },
+  {
+    "title": "Design Lead, Reverb LP",
+    "logo": "reverblp",
+    "content": [
+      "tktk"
+    ]
+  },
+  {
+    "title": "Lead UI / UX Designer",
+    "company": "Hashrocket",
+    "logo": "hashrocket",
+    "content": [
+      "tktk"
+    ]
+  },
+  {
+    "title": "UI / UX Designer",
+    "company": "Griffin",
+    "logo": "griffin",
+    "content": [
+      "tktk"
+    ]
+  }
+]

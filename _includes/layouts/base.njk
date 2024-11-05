@@ -17,13 +17,17 @@
       <header>
         <h1>
           <a href="{{ '/' | url }}">
-            {{ metadata.title }}
+            {{ title or metadata.title }}
           </a>
         </h1>
+        {% block headercontent %}
+        {% endblock %}
       </header>
 
       <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
         {{ content | safe }}
+        {% block content %}
+        {% endblock %}
       </main>
 
       <footer>

@@ -1,0 +1,53 @@
+---
+title: Hi, I'm Cam.
+logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
+---
+
+{% extends 'layouts/base.njk' %}
+{% block headercontent %}
+  <h2>
+    I’m an experienced design manager with a background in code, analysis, systems, and . I’m a believer in the power of understanding users, empowering designers, and enabling teams.
+  </h2>
+  <ul>
+    {% for s in story %}
+      <li>
+        <a href="#{{s.logo}}">
+          <img src="/img/logos/{{s.logo}}.svg" />
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>
+    I’ve worked with clients and in-house, for startups and established businesses, and in every phase of the design process, from strategy to shipping code.
+  </h3>
+{% endblock %}
+
+{% block content %}
+
+<h2>
+  Reverb.com
+</h2>
+<h4>2016-2024</h4>
+<p>
+  Reverb is a two-sided marketplace where musicians buy & sell music gear. Over my 8-year career there, Reverb grew from a plucky underdog to become the leading online source for used music gear.
+</p>
+<p>
+  I led numerous initiatives & teams during my time at Reverb – here are some of my key contributions:
+</p>
+
+{% for s in story %}
+  <section class="story">
+    <div class="story__logo">
+      <img src="/img/logos/{{s.logo}}.svg" />
+    </div>
+    <h3>{{s.title}}</h3>
+    <h4>{{s.company or "Reverb"}}</h4>
+    {% for c in s.content %}
+      <p>{{ c }}</p>
+    {% endfor %}
+    <div class="story__parallax">
+    </div>
+  </section>
+{% endfor %}
+
+{% endblock %}
