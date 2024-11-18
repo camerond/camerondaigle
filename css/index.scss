@@ -112,7 +112,7 @@ body {
 
 header {
   .tmpl-story & {
-    background: #fafafa;
+    background: #f5f5f5;
   }
 }
 
@@ -201,6 +201,7 @@ h2 {
     font-size: 2rem;
     font-weight: 300;
     max-width: 60rem;
+    margin: 0;
   }
 }
 
@@ -211,6 +212,7 @@ h3 {
     font-size: 2rem;
     font-weight: 300;
     max-width: 60rem;
+    margin: 0;
   }
 }
 
@@ -330,14 +332,14 @@ footer {
   display: flex;
   align-items: flex-start;
 
-  @include vw-max(padding-top, 3);
-  @include vw-max(padding-bottom, 3);
+  @include vw-max(padding-top, 5);
+  @include vw-max(padding-bottom, 2);
   @include mobile {
     margin-left: 0;
   }
 
   h2 {
-    font-size: 4rem;
+    @include responsive(font-size, 4rem, 3rem);
     font-weight: 300;
     margin: 0;
     line-height: 1.1;
@@ -387,6 +389,7 @@ footer {
 
   @include mobile {
     display: block;
+    padding-right: 5vw;
   }
 }
 
@@ -402,6 +405,14 @@ footer {
   perspective: 1px;
   box-shadow: 0 0 10em var(--secondary-color);
   background-size: cover;
+  
+  @include mobile {
+    margin-left: $gutter-vw * -1vw;
+    margin-right: -5vw;
+    aspect-ratio: 1 / 1;
+
+    @include leftRule(rgba(0, 0, 0, 10%));
+  }
 }
 
 @keyframes glow {
