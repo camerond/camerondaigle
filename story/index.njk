@@ -1,6 +1,7 @@
 ---
-title: Hi, I'm Cam.
+titleoverride: Hi, I'm Cam.
 logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
+templateClass: tmpl-story
 ---
 
 {% extends 'layouts/base.njk' %}
@@ -8,11 +9,11 @@ logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
   <h2>
     I’m an experienced design manager with a background in code, analysis, systems, and . I’m a believer in the power of understanding users, empowering designers, and enabling teams.
   </h2>
-  <ul>
+  <ul class="logo-row">
     {% for s in story %}
       <li>
-        <a href="#{{s.logo}}">
-          <img src="/img/logos/{{s.logo}}.svg" />
+        <a href="#{{s.slug}}">
+          <img class="img-block" src="/img/logos/{{s.slug}}.svg" />
         </a>
       </li>
     {% endfor %}
@@ -24,6 +25,7 @@ logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
 
 {% block content %}
 
+<!--
 <h2>
   Reverb.com
 </h2>
@@ -34,18 +36,25 @@ logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
 <p>
   I led numerous initiatives & teams during my time at Reverb – here are some of my key contributions:
 </p>
+-->
 
 {% for s in story %}
-  <section class="story">
+  <section class="story" id={{s.slug}}>
     <div class="story__logo">
-      <img src="/img/logos/{{s.logo}}.svg" />
+      <img src="/img/logos/{{s.slug}}.svg" />
     </div>
-    <h3>{{s.title}}</h3>
-    <h4>{{s.company or "Reverb"}}</h4>
-    {% for c in s.content %}
-      <p>{{ c }}</p>
-    {% endfor %}
-    <div class="story__parallax">
+    <div class="story__main">
+      <div class="story__text">
+        <h2>{{s.title}}</h2>
+        <h3>{{s.company or "Reverb"}}</h3>
+        {% for c in s.content %}
+          <p>{{ c }}</p>
+        {% endfor %}
+      </div>
+      <div
+        class="story__image"
+        style="background-image: url(/img/story/{{s.slug}}.jpg)"
+      />
     </div>
   </section>
 {% endfor %}

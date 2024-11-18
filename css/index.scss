@@ -1,0 +1,417 @@
+@use 'sass:math';
+
+$site-width-max: 1600;
+$site-width-max-rem: 0.1rem * $site-width-max;
+$gutter-vw: 10;
+
+@mixin max {
+  @media only screen and (min-width: #{1px * $site-width-max}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin vw-max($attr, $value) {
+  #{$attr}: #{$value}vw;
+
+  @include max {
+    #{$attr}: #{math.div($value, 1000) * $site-width-max}rem;
+  }
+}
+
+@mixin responsive($attribute, $base: false, $mobile: false, $max: false) {
+  @if $base {
+    #{$attribute}: $base;
+  }
+
+  @if $max {
+    @include max {
+      #{$attribute}: $max;
+    }
+  }
+
+  @if $mobile {
+    @include mobile {
+      #{$attribute}: $mobile;
+    }
+  }
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 80rem;
+
+  @include vw-max(padding, 1);
+}
+
+@mixin leftRule($background: var(--main-color)) {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -0.1rem;
+    bottom: -0.1rem;
+    width: 0.3rem;
+    border-radius: 0.2rem;
+    background: $background;
+
+    @include vw-max(left, 2);
+  }
+}
+
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "jost";
+  src: url('fonts/Jost-VariableFont_wght.ttf');
+  font-style: normal;
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: "jost";
+  src: url('fonts/Jost-Italic-VariableFont_wght.ttf');
+  font-style: italic;
+  font-weight: 1 1000;
+}
+
+:root {
+  --main-color: #333;
+  --secondary-color: #ccc;
+  --highlight-color: #b00b00;
+  --highlight-hover-color: #d00d00;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'jost', sans-serif;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  line-height: 1.7;
+  transform-style: preserve-3d;
+  perspective: 1px;
+}
+
+header {
+  .tmpl-story & {
+    background: #fafafa;
+  }
+}
+
+.header__inner {
+  @include wrapper;
+
+  .tmpl-story & {
+    max-width: $site-width-max-rem;
+    position: relative;
+
+    @include vw-max(padding, $gutter-vw);
+    @include leftRule(linear-gradient(to bottom, transparent 0 20%, var(--main-color)));
+  }
+}
+
+main {
+  @include wrapper;
+
+  .tmpl-story & {
+    padding: 0;
+    max-width: $site-width-max-rem;
+  }
+}
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+a {
+  color: var(--main-color);
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  transition: border .1s ease-in-out;
+  border-bottom-color: var(--secondary-color);
+
+  &:hover {
+    border-bottom-color: var(--highlight-hover-color);
+    border-width: 4px;
+  }
+
+  &:has(img) {
+    border: none;
+  }
+}
+
+h1, h2, h3 {
+  margin: 1.5em 0 1em 0;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  @include responsive(font-size, 2.8em, $mobile: 2.2em);
+
+  line-height: 1.1;
+
+  a {
+    border-bottom-color: transparent;
+
+    &:hover {
+      border-bottom-color: var(--highlight-hover-color);
+    }
+  }
+
+  header & {
+    @include responsive(font-size, 6vw, 10vw, 9rem);
+
+    font-weight: 200;
+    margin-top: 1em;
+  }
+
+  .tmpl-story header & {
+    margin-top: 0;
+    margin-bottom: 0.1em;
+  }
+}
+
+h2 {
+  @include responsive(font-size, 2em, 1.8em);
+
+  .tmpl-story header & {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60rem;
+  }
+}
+
+h3 {
+  @include responsive(font-size, 1.6em, 1.4em);
+
+  .tmpl-story header & {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60rem;
+  }
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+p, ul {
+  margin: 1.5em 0;
+}
+
+ul {
+  margin-left: 2em;
+  margin-right: 2em;
+
+  .tmpl-home & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+li {
+  margin: 0.8em 0;
+
+  .tmpl-home & {
+    list-style-type: none;
+  }
+}
+
+.direct-link {
+  position: absolute;
+  right: 100%;
+  padding-right: 0.5em;
+  border: none;
+  opacity: 0;
+  transition: opacity .2s;
+
+  h3:hover &,
+  h4:hover & {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+footer {
+  @include wrapper;
+
+  font-size: 0.8em;
+  padding: 8em 0;
+  text-align: center;
+  position: relative;
+
+  .tmpl-story & {
+    max-width: $site-width-max-rem;
+    text-align: left;
+    @include leftRule(linear-gradient(to top, transparent 0 40%, var(--main-color)));
+    @include vw-max(padding-left, $gutter-vw);
+  }
+}
+
+.img-block {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chaching {
+  text-align: center;
+ 
+  a {
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid var(--main-color);
+    padding: 0.5em 2em;
+    font-size: 1.2em;
+    transition: all .2s;
+  }
+
+  a:hover {
+    color: var(--highlight-color);
+    border-color: var(--highlight-hover-color);
+    animation: glow 1s infinite ease-in-out;
+  }
+}
+
+.go-back {
+  text-align: center;
+  margin: 12rem 0;
+}
+
+.logo-row {
+  margin-left: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 100%;
+
+  @include vw-max(gap, 2);
+
+  li {
+    flex: 1 1 auto;
+    max-width: 10rem;
+    min-width: 6rem;
+
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.story {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  @include vw-max(padding-top, 3);
+  @include vw-max(padding-bottom, 3);
+  @include mobile {
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.3em 0 0 0;
+  }
+
+  @include leftRule;
+}
+
+.story__logo {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+
+  @include vw-max(margin-top, 5);
+  @include vw-max(flex-basis, $gutter-vw);
+  @include vw-max(padding-right, 1);
+
+  img {
+    display: block;
+    float: right;
+    width: 70%;
+  }
+
+  &:before {
+    @include vw-max(left, 2);
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    background: var(--main-color);
+  }
+}
+
+.story__main {
+  display: flex;
+  gap: 3rem;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.story__text {
+  @include vw-max(padding-top, 5);
+  @include vw-max(padding-bottom, 5);
+}
+
+.story__image {
+  flex: 0 0 50%;
+  background: #ddd;
+  overflow: hidden;
+  perspective: 1px;
+  box-shadow: 0 0 10em var(--secondary-color);
+  background-size: cover;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 1rem var(--highlight-hover-color);
+  }
+  50% {
+    box-shadow: 0 0 3rem var(--highlight-hover-color);
+  }
+  100% {
+    box-shadow: 0 0 1rem var(--highlight-hover-color);
+  }
+}
