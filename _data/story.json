@@ -3,7 +3,7 @@
     "title": "Design Lead, Trust & Safety Team",
     "slug": "reverbtrust",
     "content": [
-      "Reverb has made a name for itself over the years as not only the best but safest place to buy music gear. However, as with any large-scale online marketplace, spam & fraud eventually became an issue worthy of its own dedicated product team.",
+      "Since its founding in 2016, Reverb has built a reputation as not only the best, but the <em>safest</em> buy music gear online. However, as with any large-scale two-sided marketplace, spam & fraud eventually became an issue worthy of its own dedicated product team.",
       "In 2024, I led design on our Spam & Fraud initiative. I proposed & then worked with our data analysts & engineers to implement a brand-new KPI to guide our work, and worked with our Engineering & Product leads to craft our overall roadmap. (We ended up beating our KPI goal by more than half.)",
       "I also led a comprehensive rebranding effort – any moment a Reverb user engages with our Trust features (e.g. flagging a message) became an opportunity to build their trust in the platform by teaching them about our Trust team."
     ]
@@ -30,7 +30,7 @@
     "title": "Design Lead, Reverb LP",
     "slug": "reverblp",
     "content": [
-      "In 2018, Reverb launched a sister website for selling vinyl, cassettes, and CDs – an opportunity to concept & lead design for a 0-1 product. I designed & built a brand-new library of UI components, many of which ended up being shared with the main Reverb product, and are still in use today.",
+      "In 2018, Reverb launched a sister website for selling vinyl, cassettes, and CDs – an opportunity for me to concept & lead design for a 0-1 product. I designed & built a brand-new library of UI components, many of which ended up being shared with the main Reverb product and are still in use today.",
       "In addition to leading design, I led user-testing sessions, built a fair amount of our frontend componentry, and designed a modular CMS that powered rich editorial experiences both on Reverb LP and the main Reverb site."
     ]
   },
@@ -51,7 +51,7 @@
     "slug": "griffin",
     "content": [
       "Looking all the way back to 2006-10, there are still some highlights I'm proud to look back on. I designed iTalk, which was the top voice recorder app on the App Store prior to Apple releasing their own Voice Memos app.",
-      "There wasn't much I didn't design at Griffin; in addition to designing their eCommerce site, I built secondary marketing sites, print ads, trade show booth graphics, their annual catalog, and even handled product photography & processing for a time."
+      "There wasn't much I <em>didn't</em> design at Griffin; in addition to designing their eCommerce site, I built secondary marketing sites, print ads, trade show booth graphics, their annual catalog, and even handled product photography & processing for a time."
     ]
   }
 ]

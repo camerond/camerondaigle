@@ -11,14 +11,20 @@
     <link rel="stylesheet" href="{{ '/css/index.css' | url | bust }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    {% block head %}
+    {% endblock %}
   </head>
   <body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
     <header>
       <div class="header__inner">
         <h1>
-          <a href="{{ '/' | url }}">
-            {{ titleoverride or "Cam Daigle" }}
-          </a>
+          {% if titleoverride %}
+            {{ titleoverride }}
+          {% else %}
+            <a href="{{ '/' | url }}">
+              Cam Daigle
+            </a>
+          {% endif %}
         </h1>
         {% block headercontent %}
         {% endblock %}
@@ -32,6 +38,8 @@
     </main>
 
     <footer>
+      {% block footer %}
+      {% endblock %}
       &copy; 2022 Cam Daigle
     </footer>
   </body>
