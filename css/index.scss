@@ -2,7 +2,7 @@
 
 $site-width-max: 1600;
 $site-width-max-rem: 0.1rem * $site-width-max;
-$gutter-vw: 10;
+$gutter-vw: 15;
 
 @mixin max {
   @media only screen and (min-width: #{1px * $site-width-max}) {
@@ -325,7 +325,7 @@ footer {
   li {
     flex: 1 1 auto;
     max-width: 10rem;
-    min-width: 6rem;
+    min-width: 4rem;
 
     a {
       display: block;
@@ -344,9 +344,9 @@ footer {
   background-size: cover;
   box-shadow: 0 0 10em var(--color-shadow);
 
-  @include vw-max(right, $gutter-vw);
-  @include vw-max(top, $gutter-vw * 0.5);
-  @include vw-max(width, $gutter-vw * 1.5);
+  @include vw-max(right, 10);
+  @include vw-max(top, 5);
+  @include vw-max(width, 15);
 }
 
 .story {
@@ -385,12 +385,12 @@ footer {
 
   @include vw-max(margin-top, 5);
   @include vw-max(flex-basis, $gutter-vw);
-  @include vw-max(padding-right, 1);
+  @include vw-max(padding-right, 2);
 
   img {
     display: block;
     float: right;
-    width: 70%;
+    width: 65%;
   }
 
   &:before {
