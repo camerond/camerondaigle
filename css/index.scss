@@ -126,8 +126,10 @@ header {
   .tmpl-story & {
     max-width: $site-width-max-rem;
     position: relative;
+    box-sizing: border-box;
 
     @include vw-max(padding, $gutter-vw);
+    @include vw-max(padding-right, $gutter-vw * 0.8);
     @include leftRule(linear-gradient(to bottom, transparent 0 20%, var(--color-main)));
   }
 }
@@ -189,7 +191,7 @@ h1 {
     font-weight: 200;
     margin-top: 1em;
 
-    @include responsive(font-size, 6vw, 10vw, 9rem);
+    @include responsive(font-size, 6vw, 12vw, 9rem);
   }
 
   .tmpl-story header & {
@@ -202,10 +204,11 @@ h2 {
   @include responsive(font-size, 2em, 1.8em);
 
   .tmpl-story header & {
-    font-size: 2rem;
-    font-weight: 300;
     max-width: 60rem;
     margin: 0;
+
+    @include responsive(font-size, 2rem, 1.8rem);
+    @include responsive(font-weight, 300, 400);
   }
 }
 
@@ -213,10 +216,11 @@ h3 {
   @include responsive(font-size, 1.6em, 1.4em);
 
   .tmpl-story header & {
-    font-size: 2rem;
-    font-weight: 300;
     max-width: 60rem;
     margin: 0;
+
+    @include responsive(font-size, 2rem, 1.8rem);
+    @include responsive(font-weight, 300, 400);
   }
 }
 
@@ -274,8 +278,10 @@ footer {
   .tmpl-story & {
     text-align: left;
     padding: 1em 0;
-    max-width: 60rem;
-    margin: 0;
+    margin: 0 auto;
+    max-width: $site-width-max-rem;
+    position: relative;
+    box-sizing: border-box;
 
     @include leftRule(linear-gradient(to top, transparent 0 40%, var(--color-main)));
     @include vw-max(padding-left, $gutter-vw);
