@@ -46,7 +46,7 @@ $gutter-vw: 10;
   margin: 0 auto;
   max-width: 80rem;
 
-  @include vw-max(padding, 1);
+  @include vw-max(padding, 5);
 }
 
 @mixin leftRule($background: var(--color-main)) {
