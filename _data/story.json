@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Design Lead, Trust & Safety Team",
+    "slug": "reverbtrust",
+    "content": [
+      "Since its founding in 2016, Reverb has built a reputation as not only the best, but the <em>safest</em> buy music gear online. However, as with any large-scale two-sided marketplace, spam & fraud eventually became an issue worthy of its own dedicated product team.",
+      "In 2024, I led design on our Spam & Fraud initiative. I proposed & then worked with our data analysts & engineers to implement a brand-new KPI to guide our work, and worked with our Engineering & Product leads to craft our overall roadmap. (We ended up beating our KPI goal by more than half.)",
+      "I also led a comprehensive rebranding effort – any moment a Reverb user engages with our Trust features (e.g. flagging a message) became an opportunity to build their trust in the platform by teaching them about our Trust team."
+    ]
+  },
+  {
+    "title": "Manager, Cadence Design System",
+    "slug": "cadence",
+    "content": [
+      "I founded Cadence, the Reverb Design System team, and created a new Design Engineer role definition & advancement ladder for key ICs. I managed designers across teams, established our team’s principles & work process, and handled project management along with advocacy to the wider organization.",
+      "At the time of my departure, Cadence was comprised of over 5 dozen accessible, documented, responsive components, powering the majority of Reverb’s buyer & seller flows. We also built a cross-platform token system that kept colors, sizes, typography and more in sync between Figma & our product.",
+      "Thanks to Cadence, we were able to deliver a comprehensive look & feel update this year, as well as dark mode support – and product teams organization-wide were able to deliver faster, more easily, and at a higher quality than before."
+    ]
+  },
+  {
+    "title": "Lead Product Designer, Reverb Buyer Team",
+    "slug": "reverb",
+    "content": [
+      "Reverb was purchased by Etsy in 2019, and I led design for our buyer-side experience throughout that transition. I hired & managed designers, worked with product & engineering leads to establish our overall strategy, and worked with teams on user problem definition, research, and analysis.",
+      "Under Etsy, Reverb pivoted to an experimentation-driven process – product changes always took the form of A/B tests, and were measured by their overall impact on purchase conversion. To that end, I established our experimentation template & best practices around hypothesis & user problem definition.",
+      "Many of the improvements from this era – standardizing our rows & grids, systematizing our callouts & nudges, and more – form the foundation of Reverb as it exists today."
+    ]
+  },
+  {
+    "title": "Design Lead, Reverb LP",
+    "slug": "reverblp",
+    "content": [
+      "In 2018, Reverb launched a sister website for selling vinyl, cassettes, and CDs – an opportunity for me to concept & lead design for a 0-1 product. I designed & built a brand-new library of UI components, many of which ended up being shared with the main Reverb product and are still in use today.",
+      "In addition to leading design, I led user-testing sessions, built a fair amount of our frontend componentry, and designed a modular CMS that powered rich editorial experiences both on Reverb LP and the main Reverb site."
+    ]
+  },
+  {
+    "title": "Lead UI / UX Designer",
+    "company": "Hashrocket",
+    "slug": "hashrocket",
+    "content": [
+      "From 2010 to 2016, I worked with a crack team of developers at Hashrocket, building products for a wide variety of clients & industries. Hashrocket's direct & transparent approach to client relations meant that I gained experience working directly with stakeholders – experience that has served me well throughout my career as I moved into roles requiring experience with management & strategy.",
+      "I designed for startups and established clients, for B2B and B2C scenarios, admin systems and social apps. Any given day involved working with anything from hardware management dashboards to motivational posters for our offices.",
+      "My time at Hashrocket taught me invaluable lessons about how to build bridges between clients, developers, and users. I spoke at conferences both domestically and abroad, some of which are still on YouTube if you dig around."
+
+    ]
+  },
+  {
+    "title": "UI / UX Designer",
+    "company": "Griffin Technology",
+    "slug": "griffin",
+    "content": [
+      "Looking all the way back to 2006-10, there are still some highlights I'm proud to look back on. I designed iTalk, which was the top voice recorder app on the App Store prior to Apple releasing their own Voice Memos app.",
+      "There wasn't much I <em>didn't</em> design at Griffin; in addition to designing their eCommerce site, I built secondary marketing sites, print ads, trade show booth graphics, their annual catalog, and even handled product photography & processing for a time."
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+---
+titleoverride: Hi, I'm Cam.
+logos: [reverbtrust, cadence, reverblp, reverb, hashrocket, griffin]
+templateClass: tmpl-story
+---
+
+{% extends 'layouts/base.njk' %}
+{% block head %}
+  <meta name="robots" content="noindex">
+{% endblock %}
+
+{% block headercontent %}
+  <h2>
+    I’m an experienced design leader. I’m a believer in the power of understanding users, empowering designers, and enabling teams.
+  </h2>
+  <ul class="logo-row">
+    {% for s in story %}
+      <li>
+        <a href="#{{s.slug}}">
+          <img class="img-block" src="/img/logos/{{s.slug}}.svg" />
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <h3>
+    I've worked in every phase of the design process, from defining strategy to shipping code. This page is a brief timeline of my professional journey.
+  </h3>
+  <div class="header__avatar" />
+{% endblock %}
+
+{% block content %}
+
+{% for s in story %}
+  <section class="story" id={{s.slug}}>
+    <div class="story__logo">
+      <img src="/img/logos/{{s.slug}}.svg" />
+    </div>
+    <div class="story__main">
+      <div class="story__text">
+        <h2>{{s.title}}</h2>
+        <h3>{{s.company or "Reverb"}}</h3>
+        {% for c in s.content %}
+          <p>{{ c | safe }}</p>
+        {% endfor %}
+        <ul class="story__tags">
+          {% for t in s.tags %}
+            <li>{{t}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div
+        class="story__image"
+        style="background-image: url(/img/story/{{s.slug}}.jpg)"
+      />
+    </div>
+  </section>
+{% endfor %}
+
+{% endblock %}
+
+{% block footer %}
+  <h2>
+    Thanks for reading!
+  </h2>
+  <p>
+    This page is noindexed and just intended as a glimpse of what I provide as a design & frontend leader. I'd love to talk more about anything here that resonates with you; please don't hesitate to contact me at <a href="mailto:camerondaigle@gmail.com">camerondaigle@gmail.com</a>.
+  </p>
+{% endblock %}

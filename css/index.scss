@@ -1,0 +1,464 @@
+@use 'sass:math';
+
+$site-width-max: 1600;
+$site-width-max-rem: 0.1rem * $site-width-max;
+$gutter-vw: 10;
+
+@mixin max {
+  @media only screen and (min-width: #{1px * $site-width-max}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin vw-max($attr, $value) {
+  #{$attr}: #{$value}vw;
+
+  @include max {
+    #{$attr}: #{math.div($value, 1000) * $site-width-max}rem;
+  }
+}
+
+@mixin responsive($attribute, $base: false, $mobile: false, $max: false) {
+  @if $base {
+    #{$attribute}: $base;
+  }
+
+  @if $max {
+    @include max {
+      #{$attribute}: $max;
+    }
+  }
+
+  @if $mobile {
+    @include mobile {
+      #{$attribute}: $mobile;
+    }
+  }
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  max-width: 80rem;
+
+  @include vw-max(padding, 5);
+}
+
+@mixin leftRule($background: var(--color-main)) {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -0.1rem;
+    bottom: -0.1rem;
+    width: 0.3rem;
+    border-radius: 0.2rem;
+    background: $background;
+
+    @include vw-max(left, 2);
+  }
+}
+
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "jost";
+  src: url('fonts/Jost-VariableFont_wght.ttf');
+  font-style: normal;
+  font-weight: 1 1000;
+}
+
+@font-face {
+  font-family: "jost";
+  src: url('fonts/Jost-Italic-VariableFont_wght.ttf');
+  font-style: italic;
+  font-weight: 1 1000;
+}
+
+:root {
+  --color-main: #333;
+  --color-offwhite: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --color-secondary: #ccc;
+  --color-highlight: #b00b00;
+  --color-highlight-hover: #d00d00;
+}
+
+html {
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'jost', sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-main);
+  line-height: 1.7;
+  transform-style: preserve-3d;
+  perspective: 1px;
+}
+
+header {
+  .tmpl-story & {
+    background: var(--color-offwhite);
+  }
+}
+
+.header__inner {
+  @include wrapper;
+
+  .tmpl-story & {
+    max-width: $site-width-max-rem;
+    position: relative;
+
+    @include vw-max(padding, $gutter-vw);
+    @include leftRule(linear-gradient(to bottom, transparent 0 20%, var(--color-main)));
+  }
+}
+
+main {
+  @include wrapper;
+
+  .tmpl-story & {
+    padding: 0;
+    max-width: $site-width-max-rem;
+  }
+}
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+a {
+  color: var(--color-main);
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  transition: border .1s ease-in-out;
+  border-bottom-color: var(--color-secondary);
+
+  &:hover {
+    border-bottom-color: var(--color-highlight-hover);
+    border-width: 4px;
+  }
+
+  &:has(img) {
+    border: none;
+  }
+}
+
+h1, h2, h3 {
+  margin: 1.5em 0 1em 0;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  @include responsive(font-size, 2.8em, $mobile: 2.2em);
+
+  line-height: 1.1;
+
+  a {
+    border-bottom-color: transparent;
+
+    &:hover {
+      border-bottom-color: var(--color-highlight-hover);
+    }
+  }
+
+  header & {
+    @include responsive(font-size, 6vw, 10vw, 9rem);
+
+    font-weight: 200;
+    margin-top: 1em;
+  }
+
+  .tmpl-story header & {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+  }
+}
+
+h2 {
+  @include responsive(font-size, 2em, 1.8em);
+
+  .tmpl-story header & {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60rem;
+    margin: 0;
+  }
+}
+
+h3 {
+  @include responsive(font-size, 1.6em, 1.4em);
+
+  .tmpl-story header & {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 60rem;
+    margin: 0;
+  }
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+p, ul {
+  margin: 1.5em 0;
+}
+
+ul {
+  margin-left: 2em;
+  margin-right: 2em;
+
+  .tmpl-home & {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+li {
+  margin: 0.8em 0;
+
+  .tmpl-home & {
+    list-style-type: none;
+  }
+}
+
+.direct-link {
+  position: absolute;
+  right: 100%;
+  padding-right: 0.5em;
+  border: none;
+  opacity: 0;
+  transition: opacity .2s;
+
+  h3:hover &,
+  h4:hover & {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+footer {
+  @include wrapper;
+
+  padding: 8em 0;
+  text-align: center;
+  position: relative;
+
+  .tmpl-story & {
+    text-align: left;
+    padding: 1em 0;
+    max-width: 60rem;
+    margin: 0;
+
+    @include leftRule(linear-gradient(to top, transparent 0 40%, var(--color-main)));
+    @include vw-max(padding-left, $gutter-vw);
+  }
+}
+
+.img-block {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.chaching {
+  text-align: center;
+ 
+  a {
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid var(--color-main);
+    padding: 0.5em 2em;
+    font-size: 1.2em;
+    transition: all .2s;
+  }
+
+  a:hover {
+    color: var(--color-highlight);
+    border-color: var(--color-highlight-hover);
+    animation: glow 1s infinite ease-in-out;
+  }
+}
+
+.go-back {
+  text-align: center;
+  margin: 12rem 0;
+}
+
+.logo-row {
+  margin-left: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80rem;
+
+  @include vw-max(gap, 2);
+
+  li {
+    flex: 1 1 auto;
+    max-width: 10rem;
+    min-width: 6rem;
+
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.header__avatar {
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  background: goldenrod;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url(/img/story/avatar.jpg);
+  background-size: cover;
+  box-shadow: 0 0 10em var(--color-shadow);
+
+  @include vw-max(right, $gutter-vw);
+  @include vw-max(top, $gutter-vw / 2);
+  @include vw-max(width, $gutter-vw * 1.5);
+}
+
+.story {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  @include vw-max(padding-top, 5);
+  @include vw-max(padding-bottom, 2);
+  @include mobile {
+    margin-left: 0;
+  }
+
+  h2 {
+    @include responsive(font-size, 4rem, 3rem);
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.3em 0 0 0;
+  }
+
+  @include leftRule;
+}
+
+.story__logo {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+
+  @include vw-max(margin-top, 5);
+  @include vw-max(flex-basis, $gutter-vw);
+  @include vw-max(padding-right, 1);
+
+  img {
+    display: block;
+    float: right;
+    width: 70%;
+  }
+
+  &:before {
+    @include vw-max(left, 2);
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    background: var(--color-main);
+  }
+}
+
+.story__main {
+  display: flex;
+  @include vw-max(gap, 4);
+
+  @include mobile {
+    display: block;
+    padding-right: 4vw;
+  }
+}
+
+.story__text {
+  @include vw-max(padding-top, 5);
+  @include vw-max(padding-bottom, 5);
+}
+
+.story__tags {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 500;
+
+  li {
+    background: var(--color-offwhite);
+    padding: 0.2em 0.4em;
+    margin: 0;
+  }
+}
+
+.story__image {
+  flex: 0 0 50%;
+  background: #ddd;
+  overflow: hidden;
+  perspective: 1px;
+  box-shadow: 0 0 10em var(--color-shadow);
+  background-size: cover;
+  
+  @include mobile {
+    margin-left: $gutter-vw * -1vw;
+    margin-right: -5vw;
+    aspect-ratio: 1 / 1;
+
+    @include leftRule(rgba(0, 0, 0, 10%));
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 1rem var(--color-highlight-hover);
+  }
+  50% {
+    box-shadow: 0 0 3rem var(--color-highlight-hover);
+  }
+  100% {
+    box-shadow: 0 0 1rem var(--color-highlight-hover);
+  }
+}

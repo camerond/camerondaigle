@@ -11,24 +11,36 @@
     <link rel="stylesheet" href="{{ '/css/index.css' | url | bust }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    {% block head %}
+    {% endblock %}
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
+  <body {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <header>
+      <div class="header__inner">
         <h1>
-          <a href="{{ '/' | url }}">
-            {{ metadata.title }}
-          </a>
+          {% if titleoverride %}
+            {{ titleoverride }}
+          {% else %}
+            <a href="{{ '/' | url }}">
+              Cam Daigle
+            </a>
+          {% endif %}
         </h1>
-      </header>
+        {% block headercontent %}
+        {% endblock %}
+      </div>
+    </header>
 
-      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-        {{ content | safe }}
-      </main>
+    <main>
+      {{ content | safe }}
+      {% block content %}
+      {% endblock %}
+    </main>
 
-      <footer>
-        &copy; 2022 Cam Daigle
-      </footer>
-    </div>
+    <footer>
+      {% block footer %}
+      {% endblock %}
+      &copy; 2022 Cam Daigle
+    </footer>
   </body>
 </html>
