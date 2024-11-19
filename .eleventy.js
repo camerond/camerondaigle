@@ -1,4 +1,5 @@
 const fs = require("fs");
+const Eleventy = require("@11ty/eleventy");
 
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
@@ -9,14 +10,16 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-
 module.exports = function(eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
   eleventyConfig.addPassthroughCopy("CNAME");
+
+  eleventyConfig.addGlobalData("config", () => {
+    return { version: Eleventy.getVersion() };
+  });
 
   // Add plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -95,8 +98,6 @@ module.exports = function(eleventyConfig) {
     slugify: eleventyConfig.getFilter("slugify")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   return {
     // Control which files Eleventy will process
