@@ -17,7 +17,9 @@ $gutter-vw: 10;
 }
 
 @mixin vw-max($attr, $value) {
-  #{$attr}: #{$value}vw;
+  & {
+    #{$attr}: #{$value}vw;
+  }
 
   @include max {
     #{$attr}: #{math.div($value, 1000) * $site-width-max}rem;
@@ -171,9 +173,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  @include responsive(font-size, 2.8em, $mobile: 2.2em);
-
   line-height: 1.1;
+
+  @include responsive(font-size, 2.8em, $mobile: 2.2em);
 
   a {
     border-bottom-color: transparent;
@@ -184,10 +186,10 @@ h1 {
   }
 
   header & {
-    @include responsive(font-size, 6vw, 10vw, 9rem);
-
     font-weight: 200;
     margin-top: 1em;
+
+    @include responsive(font-size, 6vw, 10vw, 9rem);
   }
 
   .tmpl-story header & {
@@ -263,11 +265,11 @@ li {
 }
 
 footer {
-  @include wrapper;
-
   padding: 8em 0;
   text-align: center;
   position: relative;
+
+  @include wrapper;
 
   .tmpl-story & {
     text-align: left;
@@ -343,7 +345,7 @@ footer {
   box-shadow: 0 0 10em var(--color-shadow);
 
   @include vw-max(right, $gutter-vw);
-  @include vw-max(top, $gutter-vw / 2);
+  @include vw-max(top, $gutter-vw * 0.5);
   @include vw-max(width, $gutter-vw * 1.5);
 }
 
@@ -359,10 +361,11 @@ footer {
   }
 
   h2 {
-    @include responsive(font-size, 4rem, 3rem);
     font-weight: 300;
     margin: 0;
     line-height: 1.1;
+
+    @include responsive(font-size, 4rem, 3rem);
   }
 
   h3 {
@@ -391,8 +394,6 @@ footer {
   }
 
   &:before {
-    @include vw-max(left, 2);
-
     content: '';
     position: absolute;
     top: 50%;
@@ -400,6 +401,8 @@ footer {
     height: 0.3rem;
     border-radius: 0.2rem;
     background: var(--color-main);
+
+    @include vw-max(left, 2);
   }
 }
 
