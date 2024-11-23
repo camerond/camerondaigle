@@ -277,7 +277,7 @@ footer {
 
   .tmpl-story & {
     text-align: left;
-    padding: 1em 0;
+    padding: 1em 5vw;
     margin: 0 auto;
     max-width: $site-width-max-rem;
     position: relative;
@@ -285,6 +285,7 @@ footer {
 
     @include leftRule(linear-gradient(to top, transparent 0 40%, var(--color-main)));
     @include vw-max(padding-left, $gutter-vw);
+    @include vw-max(padding-right, $gutter-vw);
   }
 }
 
