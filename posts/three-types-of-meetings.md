@@ -348,15 +348,3 @@ contact me – me at camdaigle dot com – and we can chat.
 I would also love to hear any tales of this system working well for you, 
 questions you have about the system, or even ways it backfired on you, so I can
 keep polishing this page. Email me those too!
-
-And hey, we're here at the bottom of this long page together, so one last thing,
-between friends, which we now clearly are:
-
-Meetings cost money; better meetings save money. If you found the ideas I've
-laid out here helpful, and might even use them to appear a More Qualified
-Professional in a way that profits you or your business, I'd really appreciate
-if you threw some cash my way: 
-
-<div class="chaching">
-    <a target="_blank" href="https://buy.stripe.com/14k7ta6ozfcE3oQ3cc">Pay Me Money</a>
-</div>
