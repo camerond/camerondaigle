@@ -25,14 +25,15 @@
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-navigation": "^0.3.3",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@11ty/eleventy-upgrade-help": "^3.0.2",
     "eleventy-auto-cache-buster": "^0.6.1",
-    "eleventy-sass": "^2.2.6",
+    "eleventy-sass": "^3.0.0-beta.0",
     "luxon": "^2.4.0",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^8.6.4"
   }
 }

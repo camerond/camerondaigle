@@ -1,5 +1,7 @@
 const fs = require("fs");
 const Eleventy = require("@11ty/eleventy");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
@@ -19,10 +21,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
 
   eleventyConfig.addGlobalData("config", () => {
-    return { version: Eleventy.getVersion() };
+    return { version: Eleventy.version };
   });
 
   // Add plugins
+  eleventyConfig.addPlugin(UpgradeHelper);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
